@@ -1,0 +1,6 @@
+{
+  "extends": ["@medplum/eslint-config"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
