@@ -65,7 +65,7 @@ export function App(): JSX.Element {
           <Group>
             <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
             <IconHospital size={32} color="blue" />
-            <Title order={3}>Hospital Management</Title>
+            <Title order={3}>Synthlane Hospital Management</Title>
           </Group>
           <Text size="sm" c="dimmed">
             {profile.name?.[0]?.text || 'User'}
