@@ -29,13 +29,7 @@ export function SignInPage(): JSX.Element {
           <div className="auth-body">
             {isRegister ? (
               <>
-                <RegisterForm
-                  type="project"
-                  projectId={import.meta.env.VITE_MEDPLUM_PROJECT_ID || 'new'}
-                  clientId={import.meta.env.VITE_MEDPLUM_CLIENT_ID}
-                  googleClientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}
-                  onSuccess={() => navigate('/')}
-                >
+                <RegisterForm type="project" onSuccess={() => navigate('/')}>
                   <h2
                     style={{
                       textAlign: 'center',
@@ -56,11 +50,7 @@ export function SignInPage(): JSX.Element {
                 </Text>
               </>
             ) : (
-              <SignInForm
-                onSuccess={() => navigate('/')}
-                onRegister={() => navigate('/register')}
-                googleClientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}
-              >
+              <SignInForm onSuccess={() => navigate('/')} onRegister={() => navigate('/register')}>
                 <h2
                   style={{ textAlign: 'center', marginBottom: '16px', marginTop: 0, fontSize: '20px', fontWeight: 600 }}
                 >
