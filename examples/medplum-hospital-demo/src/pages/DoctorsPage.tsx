@@ -1,13 +1,14 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
 import { Badge, Button, Card, Grid, Group, Stack, Table, Text, TextInput, Title } from '@mantine/core';
-import { useDebouncedValue } from '@mantine/hooks';
+import { useDebouncedValue, useDisclosure } from '@mantine/hooks';
 import { formatHumanName } from '@medplum/core';
 import type { Practitioner } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
 import { IconSearch, IconStethoscope, IconUserPlus } from '@tabler/icons-react';
 import type { JSX } from 'react';
 import { useCallback, useEffect, useState } from 'react';
+import { AddDoctorModal } from '../components/doctors/AddDoctorModal';
 
 export function DoctorsPage(): JSX.Element {
   const medplum = useMedplum();
@@ -15,6 +16,7 @@ export function DoctorsPage(): JSX.Element {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery] = useDebouncedValue(searchQuery, 300);
+  const [addDoctorOpened, { open: openAddDoctor, close: closeAddDoctor }] = useDisclosure(false);
 
   const loadPractitioners = useCallback(async () => {
     try {
@@ -50,7 +52,9 @@ export function DoctorsPage(): JSX.Element {
             Total: {practitioners.length} | Active: {activeDoctors} | Specialties: {specialties}
           </Text>
         </div>
-        <Button leftSection={<IconUserPlus size={16} />}>Add Doctor</Button>
+        <Button leftSection={<IconUserPlus size={16} />} onClick={openAddDoctor}>
+          Add Doctor
+        </Button>
       </Group>
 
       <Grid>
@@ -173,6 +177,14 @@ export function DoctorsPage(): JSX.Element {
           </Table>
         )}
       </Card>
+
+      <AddDoctorModal
+        opened={addDoctorOpened}
+        onClose={closeAddDoctor}
+        onSuccess={() => {
+          loadPractitioners();
+        }}
+      />
     </Stack>
   );
 }

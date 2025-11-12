@@ -5,6 +5,7 @@ import { useMedplum } from '@medplum/react';
 import { IconBed, IconCalendar, IconCoin, IconStethoscope, IconTrendingUp, IconUsers } from '@tabler/icons-react';
 import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 
 interface DashboardStats {
   totalPatients: number;
@@ -18,6 +19,7 @@ interface DashboardStats {
 
 export function DashboardPage(): JSX.Element {
   const medplum = useMedplum();
+  const navigate = useNavigate();
   const [stats, setStats] = useState<DashboardStats>({
     totalPatients: 0,
     todayAppointments: 0,
@@ -181,7 +183,14 @@ export function DashboardPage(): JSX.Element {
         </Title>
         <Grid>
           <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-            <Card shadow="xs" padding="md" radius="md" withBorder style={{ cursor: 'pointer' }}>
+            <Card
+              shadow="xs"
+              padding="md"
+              radius="md"
+              withBorder
+              style={{ cursor: 'pointer' }}
+              onClick={() => navigate('/patients')}
+            >
               <Stack align="center" gap="xs">
                 <IconUsers size={32} />
                 <Text size="sm" fw={600}>
@@ -191,7 +200,14 @@ export function DashboardPage(): JSX.Element {
             </Card>
           </Grid.Col>
           <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-            <Card shadow="xs" padding="md" radius="md" withBorder style={{ cursor: 'pointer' }}>
+            <Card
+              shadow="xs"
+              padding="md"
+              radius="md"
+              withBorder
+              style={{ cursor: 'pointer' }}
+              onClick={() => navigate('/appointments')}
+            >
               <Stack align="center" gap="xs">
                 <IconCalendar size={32} />
                 <Text size="sm" fw={600}>
@@ -201,7 +217,14 @@ export function DashboardPage(): JSX.Element {
             </Card>
           </Grid.Col>
           <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-            <Card shadow="xs" padding="md" radius="md" withBorder style={{ cursor: 'pointer' }}>
+            <Card
+              shadow="xs"
+              padding="md"
+              radius="md"
+              withBorder
+              style={{ cursor: 'pointer' }}
+              onClick={() => navigate('/ipd')}
+            >
               <Stack align="center" gap="xs">
                 <IconBed size={32} />
                 <Text size="sm" fw={600}>
@@ -211,7 +234,14 @@ export function DashboardPage(): JSX.Element {
             </Card>
           </Grid.Col>
           <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-            <Card shadow="xs" padding="md" radius="md" withBorder style={{ cursor: 'pointer' }}>
+            <Card
+              shadow="xs"
+              padding="md"
+              radius="md"
+              withBorder
+              style={{ cursor: 'pointer' }}
+              onClick={() => navigate('/opd')}
+            >
               <Stack align="center" gap="xs">
                 <IconStethoscope size={32} />
                 <Text size="sm" fw={600}>

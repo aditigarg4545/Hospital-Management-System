@@ -92,15 +92,20 @@ export function AppointmentsPage(): JSX.Element {
       });
       return;
     }
-
     try {
-      const dateTimeStr = `${appointmentDate.toISOString().split('T')[0]}T${appointmentTime}:00`;
-      const endTime = new Date(new Date(dateTimeStr).getTime() + 30 * 60000).toISOString();
+      // Create date with time in local timezone, then convert to ISO string with timezone
+      const [hours, minutes] = appointmentTime.split(':');
+      const localDateTime = new Date(appointmentDate);
+      localDateTime.setHours(parseInt(hours, 10), parseInt(minutes, 10), 0, 0);
+
+      // Convert to ISO string with timezone (Z for UTC or with offset)
+      const startTime = localDateTime.toISOString();
+      const endTime = new Date(localDateTime.getTime() + 30 * 60000).toISOString();
 
       const appointment: Appointment = {
         resourceType: 'Appointment',
         status: 'booked',
-        start: dateTimeStr,
+        start: startTime,
         end: endTime,
         participant: [
           {

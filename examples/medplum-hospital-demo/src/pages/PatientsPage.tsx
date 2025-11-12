@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
 import { Button, Card, Group, Stack, Table, Text, TextInput, Title } from '@mantine/core';
-import { useDebouncedValue } from '@mantine/hooks';
+import { useDebouncedValue, useDisclosure } from '@mantine/hooks';
 import { formatHumanName } from '@medplum/core';
 import type { Patient } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
@@ -9,6 +9,7 @@ import { IconSearch, IconUserPlus } from '@tabler/icons-react';
 import type { JSX } from 'react';
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
+import { AddPatientModal } from '../components/patients/AddPatientModal';
 
 export function PatientsPage(): JSX.Element {
   const medplum = useMedplum();
@@ -17,6 +18,7 @@ export function PatientsPage(): JSX.Element {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery] = useDebouncedValue(searchQuery, 300);
+  const [addPatientOpened, { open: openAddPatient, close: closeAddPatient }] = useDisclosure(false);
 
   const loadPatients = useCallback(async () => {
     try {
@@ -45,7 +47,9 @@ export function PatientsPage(): JSX.Element {
     <Stack gap="lg">
       <Group justify="space-between">
         <Title order={2}>Patients</Title>
-        <Button leftSection={<IconUserPlus size={16} />}>Register Patient</Button>
+        <Button leftSection={<IconUserPlus size={16} />} onClick={openAddPatient}>
+          Register Patient
+        </Button>
       </Group>
 
       <Card shadow="sm" padding="lg" radius="md" withBorder>
@@ -114,6 +118,14 @@ export function PatientsPage(): JSX.Element {
           </Table>
         )}
       </Card>
+
+      <AddPatientModal
+        opened={addPatientOpened}
+        onClose={closeAddPatient}
+        onSuccess={() => {
+          loadPatients();
+        }}
+      />
     </Stack>
   );
 }
