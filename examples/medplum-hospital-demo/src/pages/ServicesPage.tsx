@@ -6,7 +6,8 @@ import { showNotification } from '@mantine/notifications';
 import type { HealthcareService } from '@medplum/fhirtypes';
 import { useMedplum } from '@medplum/react';
 import { IconCheck, IconStethoscope, IconX } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export function ServicesPage(): JSX.Element {
   const medplum = useMedplum();
@@ -16,11 +17,7 @@ export function ServicesPage(): JSX.Element {
   const [newServiceName, setNewServiceName] = useState('');
   const [newServiceDescription, setNewServiceDescription] = useState('');
 
-  useEffect(() => {
-    loadServices().catch(console.error);
-  }, []);
-
-  async function loadServices(): Promise<void> {
+  const loadServices = useCallback(async () => {
     try {
       setLoading(true);
       const servicesBundle = await medplum.search('HealthcareService', '_count=100&_sort=name');
@@ -31,7 +28,11 @@ export function ServicesPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum]);
+
+  useEffect(() => {
+    loadServices();
+  }, [loadServices]);
 
   async function handleCreateService(): Promise<void> {
     if (!newServiceName) {

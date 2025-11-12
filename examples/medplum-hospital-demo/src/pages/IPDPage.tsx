@@ -6,7 +6,8 @@ import { formatHumanName } from '@medplum/core';
 import type { Encounter, Patient } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
 import { IconBed, IconCheck, IconUserPlus } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { AdmitPatientModal } from '../components/ipd/AdmitPatientModal';
 import { DischargePatientModal } from '../components/ipd/DischargePatientModal';
 import { TransferBedModal } from '../components/ipd/TransferBedModal';
@@ -25,11 +26,7 @@ export function IPDPage(): JSX.Element {
   const [dischargeOpened, { open: openDischarge, close: closeDischarge }] = useDisclosure(false);
   const [transferOpened, { open: openTransfer, close: closeTransfer }] = useDisclosure(false);
 
-  useEffect(() => {
-    loadAdmissions().catch(console.error);
-  }, []);
-
-  async function loadAdmissions(): Promise<void> {
+  const loadAdmissions = useCallback(async () => {
     try {
       setLoading(true);
       // Get all active IPD encounters
@@ -41,22 +38,40 @@ export function IPDPage(): JSX.Element {
       const encountersList: IPDEncounter[] = [];
 
       if (encountersBundle.entry) {
-        const encounters = encountersBundle.entry.filter((e) => e.resource?.resourceType === 'Encounter');
-        const patients = encountersBundle.entry.filter((e) => e.resource?.resourceType === 'Patient');
-        const locations = encountersBundle.entry.filter((e) => e.resource?.resourceType === 'Location');
+        const encounters = encountersBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Encounter'
+        );
+        const patients = encountersBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Patient'
+        );
+        const locations = encountersBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Location'
+        );
 
         for (const encounterEntry of encounters) {
           const encounter = encounterEntry.resource as Encounter;
           const patientRef = encounter.subject?.reference;
-          const patient = patients.find((p) => `${p.resource?.resourceType}/${p.resource?.id}` === patientRef)
-            ?.resource as Patient;
+          const patientEntry = patients.find((p) => {
+            const resource = p.resource;
+            if (!resource) return false;
+            const resourceType = resource.resourceType as string;
+            const resourceId = resource.id;
+            return `${resourceType}/${resourceId}` === patientRef;
+          });
+          const patient = patientEntry?.resource as unknown as Patient | undefined;
 
           // Get bed name from location
           const locationRef = encounter.location?.[0]?.location?.reference;
-          const location = locations.find(
-            (l) => `${l.resource?.resourceType}/${l.resource?.id}` === locationRef
-          )?.resource;
-          const bedName = location?.name;
+          const locationEntry = locations.find((l) => {
+            const resource = l.resource;
+            if (!resource) return false;
+            const resourceType = resource.resourceType as string;
+            const resourceId = resource.id;
+            return `${resourceType}/${resourceId}` === locationRef;
+          });
+          const location = locationEntry?.resource as Location | undefined;
+          const bedName =
+            location && 'name' in location && typeof location.name === 'string' ? location.name : undefined;
 
           encountersList.push({
             ...encounter,
@@ -72,7 +87,11 @@ export function IPDPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum]);
+
+  useEffect(() => {
+    loadAdmissions();
+  }, [loadAdmissions]);
 
   function handleDischarge(encounter: IPDEncounter): void {
     setSelectedEncounter(encounter);

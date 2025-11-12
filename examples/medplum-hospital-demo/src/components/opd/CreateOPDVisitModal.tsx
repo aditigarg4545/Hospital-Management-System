@@ -6,6 +6,7 @@ import { createReference } from '@medplum/core';
 import type { Encounter, Patient, Practitioner } from '@medplum/fhirtypes';
 import { ResourceInput, useMedplum } from '@medplum/react';
 import { IconCheck, IconX } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useState } from 'react';
 
 interface CreateOPDVisitModalProps {

@@ -6,7 +6,8 @@ import { showNotification } from '@mantine/notifications';
 import type { Encounter, Location, Patient } from '@medplum/fhirtypes';
 import { useMedplum } from '@medplum/react';
 import { IconBed, IconCheck, IconX } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { AssignBedModal } from '../components/beds/AssignBedModal';
 import { BedCard } from '../components/beds/BedCard';
 
@@ -26,11 +27,7 @@ export function BedManagementPage(): JSX.Element {
   const [newBedName, setNewBedName] = useState('');
   const [newBedWard, setNewBedWard] = useState('');
 
-  useEffect(() => {
-    loadBeds().catch(console.error);
-  }, []);
-
-  async function loadBeds(): Promise<void> {
+  const loadBeds = useCallback(async (): Promise<void> => {
     try {
       setLoading(true);
       // Search for all bed locations
@@ -47,10 +44,22 @@ export function BedManagementPage(): JSX.Element {
               `location=${bed.id}&status:not=finished&_count=1&_include=Encounter:patient`
             );
 
-            const encounter = encounterBundle.entry?.find((e) => e.resource?.resourceType === 'Encounter')
-              ?.resource as Encounter;
-            const patient = encounterBundle.entry?.find((e) => e.resource?.resourceType === 'Patient')
-              ?.resource as Patient;
+            let encounter: Encounter | undefined;
+            let patient: Patient | undefined;
+
+            for (const entry of encounterBundle.entry || []) {
+              const resource = entry.resource;
+              if (!resource) {
+                continue;
+              }
+              const resourceType = resource.resourceType as string;
+              if (resourceType === 'Encounter') {
+                encounter = resource as Encounter;
+              }
+              if (resourceType === 'Patient') {
+                patient = resource as unknown as Patient;
+              }
+            }
 
             return {
               ...bed,
@@ -76,7 +85,11 @@ export function BedManagementPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum]);
+
+  useEffect(() => {
+    loadBeds().catch(console.error);
+  }, [loadBeds]);
 
   async function createBed(): Promise<void> {
     try {
@@ -140,9 +153,15 @@ export function BedManagementPage(): JSX.Element {
   }
 
   const filteredBeds = beds.filter((bed) => {
-    if (filterStatus === 'all') return true;
-    if (filterStatus === 'occupied') return !!bed.currentPatient;
-    if (filterStatus === 'available') return !bed.currentPatient;
+    if (filterStatus === 'all') {
+      return true;
+    }
+    if (filterStatus === 'occupied') {
+      return !!bed.currentPatient;
+    }
+    if (filterStatus === 'available') {
+      return !bed.currentPatient;
+    }
     return true;
   });
 

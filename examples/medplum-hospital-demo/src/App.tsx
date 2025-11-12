@@ -14,6 +14,7 @@ import {
   IconStethoscope,
   IconUsers,
 } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { Suspense } from 'react';
 import { Route, Routes, useLocation, useNavigate } from 'react-router';
 import { Loading } from './components/Loading';

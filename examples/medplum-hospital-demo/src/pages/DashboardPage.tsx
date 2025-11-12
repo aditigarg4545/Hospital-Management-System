@@ -3,6 +3,7 @@
 import { Card, Grid, Group, Paper, Progress, Stack, Text, Title } from '@mantine/core';
 import { useMedplum } from '@medplum/react';
 import { IconBed, IconCalendar, IconCoin, IconStethoscope, IconTrendingUp, IconUsers } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 
 interface DashboardStats {

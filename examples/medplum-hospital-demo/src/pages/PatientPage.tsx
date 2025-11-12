@@ -4,6 +4,7 @@ import { Card, Stack, Tabs, Title } from '@mantine/core';
 import type { Patient } from '@medplum/fhirtypes';
 import { ResourceBadge, ResourceTable, useMedplum } from '@medplum/react';
 import { IconCalendar, IconHistory, IconUser } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 

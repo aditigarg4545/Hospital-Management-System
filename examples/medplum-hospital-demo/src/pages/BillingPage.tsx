@@ -1,11 +1,12 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { Badge, Button, Card, Group, Select, Stack, Table, Text, Title } from '@mantine/core';
+import { Badge, Button, Card, Grid, Group, Select, Stack, Table, Text, Title } from '@mantine/core';
 import { formatHumanName } from '@medplum/core';
 import type { Claim, Patient } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
 import { IconCoin, IconFileInvoice } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 interface ClaimWithPatient extends Claim {
   patientResource?: Patient;
@@ -17,11 +18,7 @@ export function BillingPage(): JSX.Element {
   const [loading, setLoading] = useState(true);
   const [filterStatus, setFilterStatus] = useState<string>('all');
 
-  useEffect(() => {
-    loadClaims().catch(console.error);
-  }, []);
-
-  async function loadClaims(): Promise<void> {
+  const loadClaims = useCallback(async () => {
     try {
       setLoading(true);
       const claimsBundle = await medplum.search('Claim', '_include=Claim:patient&_count=100&_sort=-_lastUpdated');
@@ -29,14 +26,24 @@ export function BillingPage(): JSX.Element {
       const claimsList: ClaimWithPatient[] = [];
 
       if (claimsBundle.entry) {
-        const claimEntries = claimsBundle.entry.filter((e) => e.resource?.resourceType === 'Claim');
-        const patients = claimsBundle.entry.filter((e) => e.resource?.resourceType === 'Patient');
+        const claimEntries = claimsBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Claim'
+        );
+        const patients = claimsBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Patient'
+        );
 
         for (const claimEntry of claimEntries) {
           const claim = claimEntry.resource as Claim;
           const patientRef = claim.patient?.reference;
-          const patient = patients.find((p) => `${p.resource?.resourceType}/${p.resource?.id}` === patientRef)
-            ?.resource as Patient;
+          const patientEntry = patients.find((p) => {
+            const resource = p.resource;
+            if (!resource) return false;
+            const resourceType = resource.resourceType as string;
+            const resourceId = resource.id;
+            return `${resourceType}/${resourceId}` === patientRef;
+          });
+          const patient = patientEntry?.resource as unknown as Patient | undefined;
 
           claimsList.push({
             ...claim,
@@ -51,7 +58,11 @@ export function BillingPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum]);
+
+  useEffect(() => {
+    loadClaims();
+  }, [loadClaims]);
 
   const filteredClaims = claims.filter((claim) => {
     if (filterStatus === 'all') return true;
@@ -217,6 +228,3 @@ export function BillingPage(): JSX.Element {
     </Stack>
   );
 }
-
-// Import Grid that was missing
-import { Grid } from '@mantine/core';

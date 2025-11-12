@@ -6,7 +6,8 @@ import { formatHumanName } from '@medplum/core';
 import type { Patient } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
 import { IconSearch, IconUserPlus } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 
 export function PatientsPage(): JSX.Element {
@@ -17,11 +18,7 @@ export function PatientsPage(): JSX.Element {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery] = useDebouncedValue(searchQuery, 300);
 
-  useEffect(() => {
-    loadPatients().catch(console.error);
-  }, [debouncedQuery]);
-
-  async function loadPatients(): Promise<void> {
+  const loadPatients = useCallback(async () => {
     try {
       setLoading(true);
       const searchParams = debouncedQuery ? `name:contains=${debouncedQuery}` : '_count=50&_sort=-_lastUpdated';
@@ -34,7 +31,11 @@ export function PatientsPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum, debouncedQuery]);
+
+  useEffect(() => {
+    loadPatients();
+  }, [loadPatients]);
 
   function handlePatientClick(patient: Patient): void {
     navigate(`/patients/${patient.id}`);

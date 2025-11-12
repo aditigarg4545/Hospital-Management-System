@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
 import { Center, Loader, Stack, Text } from '@mantine/core';
+import type { JSX } from 'react';
 
 export function Loading(): JSX.Element {
   return (

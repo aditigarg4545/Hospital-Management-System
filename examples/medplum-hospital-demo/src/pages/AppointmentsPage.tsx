@@ -8,6 +8,7 @@ import { createReference, formatHumanName } from '@medplum/core';
 import type { Appointment, Patient, Practitioner } from '@medplum/fhirtypes';
 import { ResourceAvatar, ResourceInput, useMedplum } from '@medplum/react';
 import { IconCalendar, IconCheck, IconX } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useCallback, useEffect, useState } from 'react';
 
 interface AppointmentWithPatient extends Appointment {
@@ -27,7 +28,7 @@ export function AppointmentsPage(): JSX.Element {
   const [appointmentDate, setAppointmentDate] = useState<Date | null>(null);
   const [appointmentTime, setAppointmentTime] = useState<string>('09:00');
 
-  const loadAppointments = useCallback(async (): Promise<void> => {
+  const loadAppointments = useCallback(async () => {
     try {
       setLoading(true);
       const today = new Date().toISOString().split('T')[0];
@@ -40,15 +41,27 @@ export function AppointmentsPage(): JSX.Element {
       const appointmentsList: AppointmentWithPatient[] = [];
 
       if (appointmentsBundle.entry) {
-        const apps = appointmentsBundle.entry.filter((e) => e.resource?.resourceType === 'Appointment');
-        const patients = appointmentsBundle.entry.filter((e) => e.resource?.resourceType === 'Patient');
+        const apps = appointmentsBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Appointment'
+        );
+        const patients = appointmentsBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Patient'
+        );
 
         for (const appEntry of apps) {
           const appointment = appEntry.resource as Appointment;
           const patientParticipant = appointment.participant?.find((p) => p.actor?.reference?.startsWith('Patient/'));
           const patientRef = patientParticipant?.actor?.reference;
-          const patient = patients.find((p) => `${p.resource?.resourceType}/${p.resource?.id}` === patientRef)
-            ?.resource as Patient | undefined;
+          const patientEntry = patients.find((p) => {
+            const resource = p.resource;
+            if (!resource) {
+              return false;
+            }
+            const resourceType = resource.resourceType as string;
+            const resourceId = resource.id;
+            return `${resourceType}/${resourceId}` === patientRef;
+          });
+          const patient = patientEntry?.resource as Patient | undefined;
 
           appointmentsList.push({
             ...appointment,
@@ -66,7 +79,7 @@ export function AppointmentsPage(): JSX.Element {
   }, [medplum]);
 
   useEffect(() => {
-    loadAppointments().catch(console.error);
+    loadAppointments();
   }, [loadAppointments]);
 
   async function handleCreateAppointment(): Promise<void> {

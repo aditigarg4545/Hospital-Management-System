@@ -6,6 +6,7 @@ import { createReference } from '@medplum/core';
 import type { Encounter, Location, Patient, Practitioner } from '@medplum/fhirtypes';
 import { ResourceInput, useMedplum } from '@medplum/react';
 import { IconCheck, IconX } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 
 interface AdmitPatientModalProps {
@@ -26,6 +27,7 @@ export function AdmitPatientModal({ opened, onClose, onSuccess }: AdmitPatientMo
     if (opened) {
       loadAvailableBeds().catch(console.error);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [opened]);
 
   async function loadAvailableBeds(): Promise<void> {

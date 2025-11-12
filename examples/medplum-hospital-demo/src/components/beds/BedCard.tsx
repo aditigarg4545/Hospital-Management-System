@@ -6,6 +6,7 @@ import { formatHumanName } from '@medplum/core';
 import type { Encounter, Location, Patient } from '@medplum/fhirtypes';
 import { useMedplum } from '@medplum/react';
 import { IconBed, IconCheck, IconDots, IconUser, IconX } from '@tabler/icons-react';
+import type { JSX } from 'react';
 
 interface BedCardProps {
   bed: Location & { currentPatient?: Patient; currentEncounter?: Encounter };

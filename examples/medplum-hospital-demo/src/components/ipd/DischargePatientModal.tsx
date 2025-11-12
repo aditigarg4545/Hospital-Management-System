@@ -5,6 +5,7 @@ import { showNotification } from '@mantine/notifications';
 import type { Encounter } from '@medplum/fhirtypes';
 import { useMedplum } from '@medplum/react';
 import { IconCheck, IconX } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useState } from 'react';
 
 interface DischargePatientModalProps {

@@ -2,5 +2,10 @@
   "extends": ["@medplum/eslint-config"],
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "rules": {
+    "curly": ["error", "multi-line"],
+    "no-nested-ternary": "off",
+    "@typescript-eslint/no-floating-promises": "off"
   }
 }

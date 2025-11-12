@@ -2,6 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import { Center, Paper, Stack, Title } from '@mantine/core';
 import { SignInForm } from '@medplum/react';
+import type { JSX } from 'react';
 import { useNavigate } from 'react-router';
 
 export function SignInPage(): JSX.Element {

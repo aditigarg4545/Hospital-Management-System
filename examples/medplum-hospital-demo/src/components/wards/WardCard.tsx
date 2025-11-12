@@ -4,6 +4,7 @@ import { Badge, Button, Card, Group, Progress, Stack, Text } from '@mantine/core
 import type { Location } from '@medplum/fhirtypes';
 import { useMedplum } from '@medplum/react';
 import { IconBed, IconDoor } from '@tabler/icons-react';
+import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 
 interface WardCardProps {

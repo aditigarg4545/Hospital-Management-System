@@ -6,7 +6,8 @@ import { formatHumanName } from '@medplum/core';
 import type { Encounter, Patient } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
 import { IconClock, IconStethoscope, IconUserPlus } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { CreateOPDVisitModal } from '../components/opd/CreateOPDVisitModal';
 
 interface OPDEncounter extends Encounter {
@@ -20,11 +21,7 @@ export function OPDPage(): JSX.Element {
   const [filterStatus, setFilterStatus] = useState<string>('all');
   const [createOpened, { open: openCreate, close: closeCreate }] = useDisclosure(false);
 
-  useEffect(() => {
-    loadVisits().catch(console.error);
-  }, []);
-
-  async function loadVisits(): Promise<void> {
+  const loadVisits = useCallback(async () => {
     try {
       setLoading(true);
       const today = new Date().toISOString().split('T')[0];
@@ -38,14 +35,24 @@ export function OPDPage(): JSX.Element {
       const visitsList: OPDEncounter[] = [];
 
       if (encountersBundle.entry) {
-        const encounters = encountersBundle.entry.filter((e) => e.resource?.resourceType === 'Encounter');
-        const patients = encountersBundle.entry.filter((e) => e.resource?.resourceType === 'Patient');
+        const encounters = encountersBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Encounter'
+        );
+        const patients = encountersBundle.entry.filter(
+          (e) => e.resource && (e.resource.resourceType as string) === 'Patient'
+        );
 
         for (const encounterEntry of encounters) {
           const encounter = encounterEntry.resource as Encounter;
           const patientRef = encounter.subject?.reference;
-          const patient = patients.find((p) => `${p.resource?.resourceType}/${p.resource?.id}` === patientRef)
-            ?.resource as Patient;
+          const patientEntry = patients.find((p) => {
+            const resource = p.resource;
+            if (!resource) return false;
+            const resourceType = resource.resourceType as string;
+            const resourceId = resource.id;
+            return `${resourceType}/${resourceId}` === patientRef;
+          });
+          const patient = patientEntry?.resource as unknown as Patient | undefined;
 
           visitsList.push({
             ...encounter,
@@ -60,7 +67,11 @@ export function OPDPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum]);
+
+  useEffect(() => {
+    loadVisits();
+  }, [loadVisits]);
 
   const filteredVisits = visits.filter((visit) => {
     if (filterStatus === 'all') return true;

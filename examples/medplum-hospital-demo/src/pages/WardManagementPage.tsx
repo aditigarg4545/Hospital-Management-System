@@ -6,7 +6,8 @@ import { showNotification } from '@mantine/notifications';
 import type { Location } from '@medplum/fhirtypes';
 import { useMedplum } from '@medplum/react';
 import { IconCheck, IconDoor, IconX } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { WardCard } from '../components/wards/WardCard';
 
 export function WardManagementPage(): JSX.Element {
@@ -17,11 +18,7 @@ export function WardManagementPage(): JSX.Element {
   const [newWardName, setNewWardName] = useState('');
   const [newWardDescription, setNewWardDescription] = useState('');
 
-  useEffect(() => {
-    loadWards().catch(console.error);
-  }, []);
-
-  async function loadWards(): Promise<void> {
+  const loadWards = useCallback(async () => {
     try {
       setLoading(true);
       // Search for ward locations
@@ -39,7 +36,11 @@ export function WardManagementPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum]);
+
+  useEffect(() => {
+    loadWards();
+  }, [loadWards]);
 
   async function createWard(): Promise<void> {
     try {

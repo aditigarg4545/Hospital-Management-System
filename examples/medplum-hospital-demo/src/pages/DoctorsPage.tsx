@@ -6,7 +6,8 @@ import { formatHumanName } from '@medplum/core';
 import type { Practitioner } from '@medplum/fhirtypes';
 import { ResourceAvatar, useMedplum } from '@medplum/react';
 import { IconSearch, IconStethoscope, IconUserPlus } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import type { JSX } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export function DoctorsPage(): JSX.Element {
   const medplum = useMedplum();
@@ -15,11 +16,7 @@ export function DoctorsPage(): JSX.Element {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery] = useDebouncedValue(searchQuery, 300);
 
-  useEffect(() => {
-    loadPractitioners().catch(console.error);
-  }, [debouncedQuery]);
-
-  async function loadPractitioners(): Promise<void> {
+  const loadPractitioners = useCallback(async () => {
     try {
       setLoading(true);
       const searchParams = debouncedQuery ? `name:contains=${debouncedQuery}` : '_count=50&_sort=-_lastUpdated';
@@ -32,7 +29,11 @@ export function DoctorsPage(): JSX.Element {
     } finally {
       setLoading(false);
     }
-  }
+  }, [medplum, debouncedQuery]);
+
+  useEffect(() => {
+    loadPractitioners();
+  }, [loadPractitioners]);
 
   // Calculate statistics
   const activeDoctors = practitioners.filter((p) => p.active !== false).length;
