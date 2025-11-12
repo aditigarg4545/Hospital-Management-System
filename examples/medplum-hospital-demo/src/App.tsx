@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { AppShell, Burger, Group, NavLink, Stack, Text, Title } from '@mantine/core';
+import { AppShell, Button, Burger, Group, NavLink, Stack, Text, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useMedplum, useMedplumProfile } from '@medplum/react';
 import {
@@ -11,6 +11,7 @@ import {
   IconDashboard,
   IconDoor,
   IconHospital,
+  IconLogout,
   IconStethoscope,
   IconUsers,
 } from '@tabler/icons-react';
@@ -38,8 +39,13 @@ export function App(): JSX.Element {
   const location = useLocation();
   const [opened, { toggle }] = useDisclosure();
 
+  // If not authenticated, show sign in page for all routes
   if (!profile || !medplum.getActiveLogin()) {
-    return <SignInPage />;
+    return (
+      <Routes>
+        <Route path="*" element={<SignInPage />} />
+      </Routes>
+    );
   }
 
   const navItems = [
@@ -68,9 +74,23 @@ export function App(): JSX.Element {
             <IconHospital size={32} color="blue" />
             <Title order={3}>Synthlane Hospital Management</Title>
           </Group>
-          <Text size="sm" c="dimmed">
-            {profile.name?.[0]?.text || 'User'}
-          </Text>
+          <Group gap="md">
+            <Text size="sm" c="dimmed">
+              {profile.name?.[0]?.text || 'User'}
+            </Text>
+            <Button
+              variant="light"
+              color="red"
+              size="xs"
+              leftSection={<IconLogout size={16} />}
+              onClick={async () => {
+                await medplum.signOut();
+                navigate('/signin');
+              }}
+            >
+              Logout
+            </Button>
+          </Group>
         </Group>
       </AppShell.Header>
 

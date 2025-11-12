@@ -8,9 +8,9 @@ services:
     image: postgres:16
     restart: always
     environment:
-      - POSTGRES_USER=medplum
-      - POSTGRES_PASSWORD=medplum
-      - POSTGRES_DB=medplum
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=abcdEF@12
+      - POSTGRES_DB=synthhms
     volumes:
       - ./postgres/postgres.conf:/usr/local/etc/postgres/postgres.conf
       - ./postgres/:/docker-entrypoint-initdb.d/
