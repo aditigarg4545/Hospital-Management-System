@@ -8,6 +8,7 @@ import { AppShell, Loading, useMedplum } from '@medplum/react';
 import {
   IconBrandAsana,
   IconBuilding,
+  IconCalendar,
   IconDatabase,
   IconForms,
   IconId,
@@ -92,6 +93,7 @@ const resourceTypeToIcon: Record<string, FunctionComponent> = {
   Subscription: IconWebhook,
   batch: IconPackages,
   Observation: IconMicroscope,
+  Appointment: IconCalendar,
 };
 
 function getIcon(to: string): JSX.Element | undefined {

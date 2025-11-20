@@ -108,7 +108,7 @@ export async function getUserConfiguration(
 }
 
 export function getUserConfigurationMenu(project: Project, membership: ProjectMembership): UserConfigurationMenu[] {
-  const favorites = ['Patient', 'Practitioner', 'Organization', 'ServiceRequest', 'DiagnosticReport', 'Questionnaire'];
+  const favorites = ['Patient', 'Practitioner', 'Organization', 'ServiceRequest', 'Appointment', 'DiagnosticReport', 'Questionnaire'];
 
   const result = [
     {
