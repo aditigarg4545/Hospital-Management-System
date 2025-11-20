@@ -41,58 +41,79 @@ export function getDefaultFields(resourceType: string): string[] {
   if (lastSearch?.fields) {
     return lastSearch.fields;
   }
-  const fields = ['id', '_lastUpdated'];
+  const fields = [];
   switch (resourceType) {
     case 'Patient':
-      fields.push('name', 'birthDate', 'gender');
+      fields.push('name', 'birthDate', 'gender', 'email', 'address', 'active');
       break;
     case 'AsyncJob':
-      fields.push('status', 'dataVersion');
+      fields.push('id', '_lastUpdated', 'status', 'dataVersion');
       break;
     case 'AccessPolicy':
+      fields.push('id', '_lastUpdated');
+      break;
+    case 'Appointment':
+      fields.push('patient', 'practitioner', 'start', 'end', 'status', '_lastUpdated', 'description');
+      break;
     case 'Bot':
+      fields.push('id', '_lastUpdated');
+      break;
     case 'ClientApplication':
+      fields.push('id', '_lastUpdated');
+      break;
     case 'Practitioner':
+      fields.push('name', 'gender', 'email', 'qualification', 'address', 'active');
+      break;
     case 'Project':
+      fields.push('id', '_lastUpdated');
+      break;
     case 'Organization':
+      fields.push('id', '_lastUpdated');
+      break;
     case 'Questionnaire':
+      fields.push('id', '_lastUpdated');
+      break;
     case 'UserConfiguration':
-      fields.push('name');
+      fields.push('id', '_lastUpdated', 'name');
       break;
     case 'CodeSystem':
+      fields.push('id', '_lastUpdated');
+      break;
     case 'ValueSet':
-      fields.push('name', 'title', 'status');
+      fields.push('id', '_lastUpdated', 'name', 'title', 'status');
       break;
     case 'Condition':
-      fields.push('subject', 'code', 'clinicalStatus');
+      fields.push('id', '_lastUpdated', 'subject', 'code', 'clinicalStatus');
       break;
     case 'Device':
-      fields.push('manufacturer', 'deviceName', 'patient');
+      fields.push('id', '_lastUpdated', 'manufacturer', 'deviceName', 'patient');
       break;
     case 'DeviceDefinition':
-      fields.push('manufacturer[x]', 'deviceName');
+      fields.push('id', '_lastUpdated', 'manufacturer[x]', 'deviceName');
       break;
     case 'DeviceRequest':
-      fields.push('code[x]', 'subject');
+      fields.push('id', '_lastUpdated', 'code[x]', 'subject');
       break;
     case 'DiagnosticReport':
+      fields.push('id', '_lastUpdated', 'id', '_lastUpdated');
+      break;
     case 'Observation':
-      fields.push('subject', 'code', 'status');
+      fields.push('id', '_lastUpdated', 'subject', 'code', 'status');
       break;
     case 'Encounter':
-      fields.push('subject');
+      fields.push('id', '_lastUpdated', 'subject');
       break;
     case 'ServiceRequest':
-      fields.push('subject', 'code', 'status', 'orderDetail');
+      fields.push('id', '_lastUpdated', 'subject', 'code', 'status', 'orderDetail');
       break;
     case 'Subscription':
-      fields.push('criteria');
+      fields.push('id', '_lastUpdated', 'criteria');
       break;
     case 'User':
-      fields.push('email');
+      fields.push('id', '_lastUpdated', 'email');
       break;
   }
-  return fields;
+  return ['id', '_lastUpdated'];
 }
 
 function getDefaultFilters(resourceType: string): Filter[] | undefined {
