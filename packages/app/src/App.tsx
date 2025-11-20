@@ -4,7 +4,7 @@ import { Space } from '@mantine/core';
 import { MEDPLUM_VERSION } from '@medplum/core';
 import type { UserConfiguration } from '@medplum/fhirtypes';
 import type { NavbarMenu } from '@medplum/react';
-import { AppShell, Loading, Logo, useMedplum } from '@medplum/react';
+import { AppShell, Loading, useMedplum } from '@medplum/react';
 import {
   IconBrandAsana,
   IconBuilding,
@@ -23,6 +23,7 @@ import {
 import type { FunctionComponent, JSX } from 'react';
 import { Suspense } from 'react';
 import { useLocation, useSearchParams } from 'react-router';
+import AppLogo from '../../assets/AppLogo.avif';
 import { AppRoutes } from './AppRoutes';
 
 import './App.css';
@@ -39,7 +40,7 @@ export function App(): JSX.Element {
 
   return (
     <AppShell
-      logo={<Logo size={24} />}
+      logo={<img src={AppLogo} alt="Logo" style={{ height: 24 }} />}
       pathname={location.pathname}
       searchParams={searchParams}
       version={MEDPLUM_VERSION}

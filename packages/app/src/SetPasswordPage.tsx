@@ -6,7 +6,6 @@ import type { OperationOutcome } from '@medplum/fhirtypes';
 import {
   Document,
   Form,
-  Logo,
   MedplumLink,
   OperationOutcomeAlert,
   getErrorsForInput,
@@ -16,6 +15,7 @@ import {
 import type { JSX } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router';
+import AppLogo from '../../assets/AppLogo.avif';
 
 export function SetPasswordPage(): JSX.Element {
   const { id, secret } = useParams() as { id: string; secret: string };
@@ -46,7 +46,7 @@ export function SetPasswordPage(): JSX.Element {
         }}
       >
         <Center style={{ flexDirection: 'column' }}>
-          <Logo size={32} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
           <Title>Set password</Title>
         </Center>
         {!success && (

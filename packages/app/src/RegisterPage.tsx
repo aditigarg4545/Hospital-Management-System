@@ -1,11 +1,12 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
 import { Alert, Title } from '@mantine/core';
-import { Document, Logo, RegisterForm, useMedplum } from '@medplum/react';
+import { Document, RegisterForm, useMedplum } from '@medplum/react';
 import { IconAlertCircle } from '@tabler/icons-react';
 import type { JSX } from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import AppLogo from '../../assets/AppLogo.avif';
 import { getConfig, isRegisterEnabled } from './config';
 
 export function RegisterPage(): JSX.Element | null {
@@ -41,7 +42,7 @@ export function RegisterPage(): JSX.Element | null {
       googleClientId={config.googleClientId}
       recaptchaSiteKey={config.recaptchaSiteKey}
     >
-      <Logo size={32} />
+      <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
       <Title>Create a new account</Title>
     </RegisterForm>
   );

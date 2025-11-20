@@ -3,18 +3,11 @@
 import { Button, Center, Group, Stack, Title } from '@mantine/core';
 import { normalizeOperationOutcome } from '@medplum/core';
 import type { OperationOutcome } from '@medplum/fhirtypes';
-import {
-  Document,
-  Form,
-  Logo,
-  MedplumLink,
-  OperationOutcomeAlert,
-  getIssuesForExpression,
-  useMedplum,
-} from '@medplum/react';
+import { Document, Form, MedplumLink, OperationOutcomeAlert, getIssuesForExpression, useMedplum } from '@medplum/react';
 import type { JSX } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router';
+import AppLogo from '../../assets/AppLogo.avif';
 
 export function VerifyEmailPage(): JSX.Element {
   const { id, secret } = useParams() as { id: string; secret: string };
@@ -40,7 +33,7 @@ export function VerifyEmailPage(): JSX.Element {
         }}
       >
         <Center style={{ flexDirection: 'column' }}>
-          <Logo size={32} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
           <Title>Email address verification required</Title>
         </Center>
         {!success && (

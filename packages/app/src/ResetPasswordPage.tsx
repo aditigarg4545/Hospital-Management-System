@@ -10,13 +10,13 @@ import {
   getIssuesForExpression,
   getRecaptcha,
   initRecaptcha,
-  Logo,
   OperationOutcomeAlert,
   useMedplum,
 } from '@medplum/react';
 import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
+import AppLogo from '../../assets/AppLogo.avif';
 import { getConfig } from './config';
 
 export function ResetPasswordPage(): JSX.Element {
@@ -48,7 +48,7 @@ export function ResetPasswordPage(): JSX.Element {
         }}
       >
         <Stack gap="lg" mb="xl" align="center">
-          <Logo size={32} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
           <Title>Password Reset</Title>
         </Stack>
         <Stack gap="xl">

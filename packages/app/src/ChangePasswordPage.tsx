@@ -3,9 +3,10 @@
 import { Button, Center, Group, PasswordInput, Stack, Title } from '@mantine/core';
 import { normalizeOperationOutcome } from '@medplum/core';
 import type { OperationOutcome } from '@medplum/fhirtypes';
-import { Document, Form, getErrorsForInput, Logo, useMedplum } from '@medplum/react';
+import { Document, Form, getErrorsForInput, useMedplum } from '@medplum/react';
 import type { JSX } from 'react';
 import { useState } from 'react';
+import AppLogo from '../../assets/AppLogo.avif';
 
 export function ChangePasswordPage(): JSX.Element {
   const medplum = useMedplum();
@@ -24,7 +25,7 @@ export function ChangePasswordPage(): JSX.Element {
         }}
       >
         <Center style={{ flexDirection: 'column' }}>
-          <Logo size={32} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
           <Title>Change password</Title>
         </Center>
         {!success && (
