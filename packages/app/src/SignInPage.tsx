@@ -35,6 +35,7 @@ export function SignInPage(): JSX.Element {
       googleClientId={config.googleClientId}
       login={searchParams.get('login') || undefined}
       projectId={searchParams.get('project') || undefined}
+      scope="openid profile offline_access"
     >
       <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
       <Title>Sign in to {getAppName()}</Title>
