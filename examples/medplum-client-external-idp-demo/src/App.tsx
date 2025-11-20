@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { AppShell, Loading, Logo, useMedplum } from '@medplum/react';
+import { AppShell, Loading, useMedplum } from '@medplum/react';
+import AppLogo from '../../../packages/assets/AppLogo.avif';
 import { Suspense } from 'react';
 import type { JSX } from 'react';
 import { Navigate, Route, Routes } from 'react-router';
@@ -18,7 +19,7 @@ export function App(): JSX.Element | null {
 
   // If signed in, navigate to the home page. Otherwise, redirect to the Sign in page
   return (
-    <AppShell logo={<Logo size={24} />} resourceTypeSearchDisabled={true}>
+    <AppShell logo={<img src={AppLogo} alt="Logo" style={{ height: 24 }} />} resourceTypeSearchDisabled={true}>
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route

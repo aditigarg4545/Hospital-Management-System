@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { AppShell, ErrorBoundary, Loading, Logo, useMedplum, useMedplumProfile } from '@medplum/react';
+import { AppShell, ErrorBoundary, Loading, useMedplum, useMedplumProfile } from '@medplum/react';
+import AppLogo from '../../../packages/assets/AppLogo.avif';
 import { IconHome } from '@tabler/icons-react';
 import { Suspense } from 'react';
 import type { JSX } from 'react';
@@ -20,7 +21,7 @@ export function App(): JSX.Element | null {
 
   return (
     <AppShell
-      logo={<Logo size={24} />}
+      logo={<img src={AppLogo} alt="Logo" style={{ height: 24 }} />}
       menus={[{ links: [{ label: 'Home', href: '/', icon: <IconHome /> }] }]}
       resourceTypeSearchDisabled={true}
       headerSearchDisabled={true}

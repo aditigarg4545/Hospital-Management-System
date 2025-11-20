@@ -5,12 +5,12 @@ import type { ProfileResource } from '@medplum/core';
 import {
   AppShell,
   Loading,
-  Logo,
   NotificationIcon,
   useMedplum,
   useMedplumNavigate,
   useMedplumProfile,
 } from '@medplum/react';
+import AppLogo from '../../../packages/assets/AppLogo.avif';
 import {
   IconClipboardCheck,
   IconMail,
@@ -67,7 +67,7 @@ export function App(): JSX.Element | null {
 
   return (
     <AppShell
-      logo={<Logo size={24} />}
+      logo={<img src={AppLogo} alt="Logo" style={{ height: 24 }} />}
       menus={[
         {
           title: 'Spaces',

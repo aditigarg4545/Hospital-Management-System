@@ -1,6 +1,7 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { AppShell, ErrorBoundary, Loading, Logo, useMedplum, useMedplumProfile } from '@medplum/react';
+import { AppShell, ErrorBoundary, Loading, useMedplum, useMedplumProfile } from '@medplum/react';
+import AppLogo from '../../../packages/assets/AppLogo.avif';
 import '@photonhealth/elements';
 import { IconMedicineSyrup, IconReportMedical, IconRobot, IconUser } from '@tabler/icons-react';
 import { Suspense } from 'react';
@@ -28,7 +29,7 @@ export function App(): JSX.Element | null {
   return (
     <photon-client id={getConfig().photonClientId} org={getConfig().photonOrgId} dev-mode="true" auto-login="true">
       <AppShell
-        logo={<Logo size={24} />}
+        logo={<img src={AppLogo} alt="Logo" style={{ height: 24 }} />}
         menus={[
           {
             title: 'My Links',

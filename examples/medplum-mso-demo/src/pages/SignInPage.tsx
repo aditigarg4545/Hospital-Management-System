@@ -1,9 +1,10 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
 import { Title } from '@mantine/core';
-import { Logo, SignInForm } from '@medplum/react';
+import { SignInForm } from '@medplum/react';
 import type { JSX } from 'react';
 import { useNavigate } from 'react-router';
+import AppLogo from '../../../../packages/assets/AppLogo.avif';
 import { getConfig } from '../config';
 
 /**
@@ -21,7 +22,7 @@ export function SignInPage(): JSX.Element {
       clientId={getConfig().clientId}
       onSuccess={() => navigate('/')}
     >
-      <Logo size={32} />
+      <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
       <Title>Sign in to Medplum</Title>
     </SignInForm>
   );

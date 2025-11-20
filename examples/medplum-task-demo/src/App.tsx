@@ -12,7 +12,8 @@ import {
 } from '@medplum/core';
 import type { MedplumClient, SearchRequest } from '@medplum/core';
 import type { Practitioner } from '@medplum/fhirtypes';
-import { AppShell, Loading, Logo, useMedplum, useMedplumProfile } from '@medplum/react';
+import { AppShell, Loading, useMedplum, useMedplumProfile } from '@medplum/react';
+import AppLogo from '../../../packages/assets/AppLogo.avif';
 import type { NavbarLink } from '@medplum/react';
 import {
   IconCategory,
@@ -74,7 +75,7 @@ export function App(): JSX.Element | null {
   return (
     <>
       <AppShell
-        logo={<Logo size={24} />}
+        logo={<img src={AppLogo} alt="Logo" style={{ height: 24 }} />}
         menus={[
           {
             title: 'Tasks',
