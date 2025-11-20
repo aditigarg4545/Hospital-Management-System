@@ -33,7 +33,7 @@ export function VerifyEmailPage(): JSX.Element {
         }}
       >
         <Center style={{ flexDirection: 'column' }}>
-          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
           <Title>Email address verification required</Title>
         </Center>
         {!success && (

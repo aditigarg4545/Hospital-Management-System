@@ -14,7 +14,7 @@ export function SignInPage(): JSX.Element {
       googleClientId="921088377005-3j1sa10vr6hj86jgmdfh2l53v3mp7lfi.apps.googleusercontent.com"
       onSuccess={() => navigate('/')?.catch(console.error)}
     >
-      <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+      <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
       <Title>Sign in to Medplum</Title>
     </SignInForm>
   );

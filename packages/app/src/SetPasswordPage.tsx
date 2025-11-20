@@ -46,7 +46,7 @@ export function SetPasswordPage(): JSX.Element {
         }}
       >
         <Center style={{ flexDirection: 'column' }}>
-          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
           <Title>Set password</Title>
         </Center>
         {!success && (

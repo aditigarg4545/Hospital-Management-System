@@ -48,7 +48,7 @@ export function ResetPasswordPage(): JSX.Element {
         }}
       >
         <Stack gap="lg" mb="xl" align="center">
-          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
           <Title>Password Reset</Title>
         </Stack>
         <Stack gap="xl">

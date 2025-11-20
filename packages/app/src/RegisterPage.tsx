@@ -42,7 +42,7 @@ export function RegisterPage(): JSX.Element | null {
       googleClientId={config.googleClientId}
       recaptchaSiteKey={config.recaptchaSiteKey}
     >
-      <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+      <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
       <Title>Create a new account</Title>
     </RegisterForm>
   );

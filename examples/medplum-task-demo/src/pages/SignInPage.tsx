@@ -16,7 +16,7 @@ export function SignInPage(): JSX.Element {
       onSuccess={() => navigate('/')?.catch(console.error)}
       clientId={getConfig().clientId}
     >
-      <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+      <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
       <Title>Sign in to Medplum</Title>
     </SignInForm>
   );

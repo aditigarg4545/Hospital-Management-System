@@ -36,7 +36,7 @@ export function SignInPage(): JSX.Element {
       login={searchParams.get('login') || undefined}
       projectId={searchParams.get('project') || undefined}
     >
-      <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+      <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
       <Title>Sign in to {getAppName()}</Title>
       {searchParams.get('project') === 'new' && <div>Sign in again to create a new project</div>}
     </SignInForm>

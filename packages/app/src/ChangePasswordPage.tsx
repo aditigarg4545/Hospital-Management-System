@@ -25,7 +25,7 @@ export function ChangePasswordPage(): JSX.Element {
         }}
       >
         <Center style={{ flexDirection: 'column' }}>
-          <img src={AppLogo} alt="Logo" style={{ height: 32 }} />
+          <img src={AppLogo} alt="Logo" style={{ height: 32, width: 32 }} />
           <Title>Change password</Title>
         </Center>
         {!success && (
