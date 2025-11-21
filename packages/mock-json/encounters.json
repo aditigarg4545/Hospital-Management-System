@@ -50,6 +50,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/0267bc05-c82c-4566-87bf-31f541893801"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/d7ace5e0-b35e-4977-824e-7da848e1ebb4"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/ed79169e-e796-49d0-aeb7-3e0a6a759b52"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -102,6 +137,41 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/1154acb6-85d6-459b-bf97-d4b50f8af207"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/2683255c-b138-4f10-a7c8-31131c20b3ff"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/60715787-0875-439d-bad2-642dc8522127"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   },
@@ -156,6 +226,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/fc5b3172-3812-48e3-a303-5eb0d11bd033"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/be64d6ac-2c90-46fd-9f8d-39dfd63738b6"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/921a1f01-4713-4498-b1ec-763b5fce444e"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -208,6 +313,41 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/68e0f870-9da9-4a89-84b8-f5cf2ccffd6c"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/824df95d-ca88-455b-87f1-27ff8e8e5576"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/a5f28092-beff-424e-b87a-1df326f45e5d"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   },
@@ -262,6 +402,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/78f07018-29f7-4fc5-b4ca-7cb0d73cc160"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/91369f79-a00a-4457-a395-5ec47fa9c11f"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/954d6873-ab6b-4762-8be0-7a3b5ec20efa"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -314,6 +489,41 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/f1e4ddb0-0d9c-4a76-ac4c-d71d0b8e1e52"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/0903f7bb-66ac-454e-994b-25e2bf0b199d"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/de108002-bbc1-4305-aaea-785c449035de"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   },
@@ -368,6 +578,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/15593d25-ef2a-4bb2-bfee-8ba62405e4a7"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/daf47bde-3c4a-4db2-b59d-139c35c90b03"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/04eb5c9d-3a9f-4a27-a9cd-5a7e7ab66c50"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -420,6 +665,27 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/0f14a247-b955-4955-96e7-4ee25263194a"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/b13d13ef-608a-4272-b0ee-9e4002def082"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   },
@@ -474,6 +740,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/b6189f48-cdd2-49e2-9477-0a880078503c"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/2ceb2469-03da-4de6-acb6-0dfd25388df1"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/cd007e07-f247-4312-ab85-cc26a0d1aa00"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -526,6 +827,27 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/ce29dda4-f011-4b9a-afff-e2c2c984271f"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/4052a2ea-8bfe-44ef-b56a-d40a77794967"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   },
@@ -580,6 +902,27 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/a29dd76b-a49f-49ec-affb-4a884cad3ae6"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/a2b4aa97-a891-4e1e-be10-de59d7d5142e"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -632,6 +975,41 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/eecaa313-9f5a-41ec-8ef5-27e3ec0be389"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/55d31283-02b5-4d3d-8fe4-5559f783e445"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/5193d991-eb37-49ae-9115-2e476f7fc16e"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   },
@@ -686,6 +1064,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/4cc19b4a-959d-4d88-b3c4-93619f42f32c"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/ae3afbd3-236f-44ac-9f42-132eea1c4ce8"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/89995239-91a9-4661-b5fb-04cb7ff23c37"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -739,6 +1152,41 @@
           }
         ]
       }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/34b56541-06c1-446a-aa51-e66286db6970"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/0228c163-a559-42e1-b832-1d356c1eadeb"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/ef8a5d11-07eb-4996-95fb-a77d1a489c0b"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      }
     ]
   },
   {
@@ -791,6 +1239,41 @@
             "display": "Consultation"
           }
         ]
+      }
+    ],
+    "appointment": [
+      {
+        "reference": "Appointment/f6e6e072-2e14-43c0-a0ea-38fb714a2dd1"
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/7cca6c99-6577-48a2-be65-22dfb5e6089a"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "reference": "Condition/d0399e73-440b-4229-9b08-8e36101103f7"
+        },
+        "use": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+              "code": "AD",
+              "display": "Admission diagnosis"
+            }
+          ]
+        }
       }
     ]
   }

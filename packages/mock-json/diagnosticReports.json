@@ -123,7 +123,10 @@
         "reference": "Observation/6e6c9f3a-9ab4-486d-91fc-360d45bd84ab",
         "display": "Troponin T Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -165,7 +168,10 @@
         "reference": "Observation/47e1dc89-c7cb-419d-bf22-a30b419d347f",
         "display": "Troponin I Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -207,7 +213,10 @@
         "reference": "Observation/c544477a-42c2-47ab-bb58-39e379c5d39b",
         "display": "Triglycerides Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -243,7 +252,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -279,7 +291,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -321,7 +336,10 @@
         "reference": "Observation/4c6b7a4c-78ef-4b43-88b4-35f67795de5c",
         "display": "BNP Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -357,7 +375,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -399,7 +420,10 @@
         "reference": "Observation/98196cb0-8861-460a-9f40-5bc277df6111",
         "display": "Troponin I Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -435,7 +459,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -477,7 +504,10 @@
         "reference": "Observation/18b756a8-ac54-457c-a80d-a407d715039e",
         "display": "Lipid Panel Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -519,7 +549,10 @@
         "reference": "Observation/7a535078-f0be-45ad-b3de-db8463893a0c",
         "display": "Lipid Panel Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -555,7 +588,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -597,7 +633,10 @@
         "reference": "Observation/c959f228-4aef-40c2-95d4-5d3eafa51b10",
         "display": "Blood Glucose Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -633,7 +672,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -675,7 +717,10 @@
         "reference": "Observation/1b4ec737-6bea-4ab1-85e9-0921971dbfe9",
         "display": "ALT Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -711,7 +756,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -753,7 +801,10 @@
         "reference": "Observation/8098bad9-6e7b-476b-bc86-49256ae8f787",
         "display": "Total Cholesterol Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9adbda80-8af4-4d8e-8a8e-c886f6d14584"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -789,7 +840,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -825,7 +879,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -867,7 +924,10 @@
         "reference": "Observation/06df557a-ce90-4338-858f-9ec04bd1eb49",
         "display": "Calcium Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -903,7 +963,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -939,7 +1002,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -975,7 +1041,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -1017,7 +1086,10 @@
         "reference": "Observation/e043fa61-02be-4f96-94d4-e278312d84fe",
         "display": "HDL Cholesterol Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -1059,7 +1131,10 @@
         "reference": "Observation/14b68b9d-b2dc-4a47-8831-19b8f8a8c9a3",
         "display": "Potassium Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -1101,7 +1176,10 @@
         "reference": "Observation/3834dd5b-6ff2-4600-b521-416a0e321f97",
         "display": "CMP Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -1143,7 +1221,10 @@
         "reference": "Observation/6756da17-58a7-42da-99de-93a674fa99cc",
         "display": "HbA1c Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
   },
   {
     "resourceType": "DiagnosticReport",
@@ -1185,6 +1266,9 @@
         "reference": "Observation/9a820d59-f0b8-444a-af9d-69ca57f46c24",
         "display": "CBC Report Result"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
   }
 ]

@@ -94,7 +94,10 @@
         "reference": "Coverage/ec7d3924-4aba-4e39-9fcd-0cbae5bd9230",
         "display": "Medicaid"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -130,7 +133,10 @@
         "reference": "Coverage/86a2bdb5-0165-4d67-822b-c0b53b85632d",
         "display": "BlueCross BlueShield"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -166,7 +172,10 @@
         "reference": "Coverage/e581f4b1-c11f-496c-bd55-18f23f255d6b",
         "display": "BlueCross BlueShield"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -196,7 +205,10 @@
     "requester": {
       "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
     },
-    "patientInstruction": "No special preparation required"
+    "patientInstruction": "No special preparation required",
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -232,7 +244,10 @@
         "reference": "Coverage/7a219d73-0124-421e-84bb-0d6a56c23e2a",
         "display": "Kaiser Permanente"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -262,7 +277,10 @@
     "requester": {
       "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
     },
-    "patientInstruction": "Wear comfortable clothing"
+    "patientInstruction": "Wear comfortable clothing",
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -298,7 +316,10 @@
         "reference": "Coverage/bc0ffdbc-1eb2-4a3e-8d87-e9944d0d346d",
         "display": "BlueCross BlueShield"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -328,7 +349,10 @@
     "requester": {
       "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
     },
-    "patientInstruction": "No special preparation required"
+    "patientInstruction": "No special preparation required",
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -358,7 +382,10 @@
     "requester": {
       "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
     },
-    "patientInstruction": "Wear comfortable clothing"
+    "patientInstruction": "Wear comfortable clothing",
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -388,7 +415,10 @@
     "requester": {
       "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
     },
-    "patientInstruction": "Take medication as usual"
+    "patientInstruction": "Take medication as usual",
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -424,7 +454,10 @@
         "reference": "Coverage/7d78ef8f-54c9-4f42-a609-c674462c437c",
         "display": "Medicaid"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -453,6 +486,9 @@
     "authoredOn": "2025-06-08T06:08:21.839Z",
     "requester": {
       "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+    },
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
     }
   },
   {
@@ -482,6 +518,9 @@
     "authoredOn": "2025-11-07T03:01:18.658Z",
     "requester": {
       "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
     }
   },
   {
@@ -518,7 +557,10 @@
         "reference": "Coverage/ca43e916-e90a-4132-ba35-c7411db02a9a",
         "display": "Cigna"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -548,7 +590,10 @@
     "requester": {
       "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
     },
-    "patientInstruction": "Drink plenty of water before the test"
+    "patientInstruction": "Drink plenty of water before the test",
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -578,7 +623,10 @@
     "requester": {
       "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
     },
-    "patientInstruction": "Avoid strenuous exercise 24 hours before test"
+    "patientInstruction": "Avoid strenuous exercise 24 hours before test",
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -614,7 +662,10 @@
         "reference": "Coverage/deba4910-944a-4bea-a216-5e6b18bb147e",
         "display": "UnitedHealthcare"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9adbda80-8af4-4d8e-8a8e-c886f6d14584"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -644,7 +695,10 @@
     "requester": {
       "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
     },
-    "patientInstruction": "Drink plenty of water before the test"
+    "patientInstruction": "Drink plenty of water before the test",
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -674,7 +728,10 @@
     "requester": {
       "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
     },
-    "patientInstruction": "Wear comfortable clothing"
+    "patientInstruction": "Wear comfortable clothing",
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -710,7 +767,10 @@
         "reference": "Coverage/70b3c944-925a-41a1-bf6a-bb83e2a7486f",
         "display": "Cigna"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -747,7 +807,10 @@
         "reference": "Coverage/add9123d-17fa-4029-b167-b9ea3c63b581",
         "display": "Kaiser Permanente"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -783,7 +846,10 @@
         "reference": "Coverage/22059041-e82e-47da-b41c-5c7d36a62efe",
         "display": "Medicare"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -818,7 +884,10 @@
         "reference": "Coverage/2c5b43ae-2ae2-493b-a64b-899fa60c6377",
         "display": "Aetna"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -848,7 +917,10 @@
     "requester": {
       "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
     },
-    "patientInstruction": "Wear comfortable clothing"
+    "patientInstruction": "Wear comfortable clothing",
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -884,7 +956,10 @@
         "reference": "Coverage/a68cf96b-9fbb-438e-97c5-414a37b9a8f1",
         "display": "Aetna"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -914,7 +989,10 @@
     "requester": {
       "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
     },
-    "patientInstruction": "No special preparation required"
+    "patientInstruction": "No special preparation required",
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -944,7 +1022,10 @@
     "requester": {
       "reference": "Practitioner/6ec925cb-01e4-4708-830b-b145787adafe"
     },
-    "patientInstruction": "No special preparation required"
+    "patientInstruction": "No special preparation required",
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -979,7 +1060,10 @@
         "reference": "Coverage/291cf6b3-7238-4c80-af9c-004d97a8a77b",
         "display": "BlueCross BlueShield"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -1015,7 +1099,10 @@
         "reference": "Coverage/44c27d14-9335-4c8e-8751-636f4aa0629a",
         "display": "Cigna"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
   },
   {
     "resourceType": "ServiceRequest",
@@ -1051,7 +1138,10 @@
         "reference": "Coverage/e55e9b06-1b82-40ae-9801-c7fcacc3964a",
         "display": "UnitedHealthcare"
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/1ec4f612-451f-4d07-9082-7da7f8e68b73"
+    }
   },
   {
     "resourceType": "ServiceRequest",

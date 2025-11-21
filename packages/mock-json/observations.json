@@ -105,7 +105,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "Observation",
@@ -141,7 +144,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "Observation",
@@ -177,7 +183,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "Observation",
@@ -213,7 +222,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    }
   },
   {
     "resourceType": "Observation",
@@ -249,7 +261,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    }
   },
   {
     "resourceType": "Observation",
@@ -285,7 +300,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "Observation",
@@ -321,7 +339,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "Observation",
@@ -357,7 +378,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    }
   },
   {
     "resourceType": "Observation",
@@ -393,7 +417,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    }
   },
   {
     "resourceType": "Observation",
@@ -429,7 +456,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/9adbda80-8af4-4d8e-8a8e-c886f6d14584"
+    }
   },
   {
     "resourceType": "Observation",
@@ -465,7 +495,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    }
   },
   {
     "resourceType": "Observation",
@@ -501,7 +534,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    }
   },
   {
     "resourceType": "Observation",
@@ -537,7 +573,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    }
   },
   {
     "resourceType": "Observation",
@@ -573,7 +612,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    }
   },
   {
     "resourceType": "Observation",
@@ -609,7 +651,10 @@
           }
         ]
       }
-    ]
+    ],
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
   },
   {
     "resourceType": "Observation",
@@ -642,6 +687,2909 @@
             "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
             "code": "A",
             "display": "Normal"
+          }
+        ]
+      }
+    ],
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    }
+  },
+  {
+    "resourceType": "Observation",
+    "id": "fd358300-316a-4dd3-99c4-59adc736f0e9",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory Rate"
+    },
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    },
+    "effectiveDateTime": "2025-10-21T05:27:10.353Z",
+    "valueQuantity": {
+      "value": "20.74",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "00006702-18ee-477e-a7a5-9df4625f23e7",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        }
+      ],
+      "text": "Height"
+    },
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    },
+    "effectiveDateTime": "2025-10-21T05:24:37.845Z",
+    "valueQuantity": {
+      "value": "202.68",
+      "unit": "cm",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "bae77e83-e374-49b8-ba5e-e03a8ab46aa1",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        }
+      ],
+      "text": "Height"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "effectiveDateTime": "2025-10-22T04:57:05.424Z",
+    "valueQuantity": {
+      "value": "203.46",
+      "unit": "cm",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "b04c2916-5648-4a4d-a524-06135d21b387",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic blood pressure"
+        }
+      ],
+      "text": "Systolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "effectiveDateTime": "2025-10-22T04:55:18.168Z",
+    "valueQuantity": {
+      "value": "99.19",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "6bda6b37-4b29-43f9-a54f-a6a601a4ed85",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "Diastolic blood pressure"
+        }
+      ],
+      "text": "Diastolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "effectiveDateTime": "2025-10-22T04:51:20.641Z",
+    "valueQuantity": {
+      "value": "89.79",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "244c5cd5-dc5c-432f-8bd4-5278c8fd297a",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory Rate"
+    },
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    },
+    "effectiveDateTime": "2025-10-23T04:53:49.677Z",
+    "valueQuantity": {
+      "value": "19.81",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "77c7fae9-ca90-4f66-a6d5-b8cc5171b349",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
+        }
+      ],
+      "text": "Heart Rate"
+    },
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    },
+    "effectiveDateTime": "2025-10-23T05:03:10.325Z",
+    "valueQuantity": {
+      "value": "54.89",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "01214d67-6df6-4181-b07b-c9c0628ad539",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2708-6",
+          "display": "Oxygen saturation in Arterial blood"
+        }
+      ],
+      "text": "O2 Saturation"
+    },
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    },
+    "effectiveDateTime": "2025-10-23T04:39:03.914Z",
+    "valueQuantity": {
+      "value": "109.2",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "c82b7389-87fe-4418-88ca-ce135b6573d5",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Temperature"
+    },
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    },
+    "effectiveDateTime": "2025-10-23T05:27:56.824Z",
+    "valueQuantity": {
+      "value": "35.84",
+      "unit": "Cel",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "01d841a6-adda-4ad1-a18a-b70ce103db07",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Temperature"
+    },
+    "subject": {
+      "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+    },
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    },
+    "effectiveDateTime": "2025-10-24T05:24:46.577Z",
+    "valueQuantity": {
+      "value": "34.24",
+      "unit": "Cel",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "95cdbdd4-d140-457c-81c4-fc23c35d0fe8",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2708-6",
+          "display": "Oxygen saturation in Arterial blood"
+        }
+      ],
+      "text": "O2 Saturation"
+    },
+    "subject": {
+      "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+    },
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    },
+    "effectiveDateTime": "2025-10-24T04:43:54.988Z",
+    "valueQuantity": {
+      "value": "102.04",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "9b8aed54-8f16-4b48-b8f2-c355675d9b4f",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Temperature"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    },
+    "effectiveDateTime": "2025-10-25T05:08:43.054Z",
+    "valueQuantity": {
+      "value": "34.93",
+      "unit": "Cel",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "7477c98c-118a-4417-b995-b952cc5fafa6",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body weight"
+        }
+      ],
+      "text": "Weight"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    },
+    "effectiveDateTime": "2025-10-25T04:42:37.200Z",
+    "valueQuantity": {
+      "value": "71.37",
+      "unit": "kg",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "c4d9acf7-9c75-4d17-a3fb-58b608f9e1dd",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic blood pressure"
+        }
+      ],
+      "text": "Systolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "effectiveDateTime": "2025-10-26T04:46:03.831Z",
+    "valueQuantity": {
+      "value": "131.59",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "990c3648-3a29-49c2-8d35-1b70e587caf2",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "Diastolic blood pressure"
+        }
+      ],
+      "text": "Diastolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "effectiveDateTime": "2025-10-26T05:14:51.573Z",
+    "valueQuantity": {
+      "value": "55.75",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "12ff03a7-46e9-4782-9dbc-3cd890defde5",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index"
+        }
+      ],
+      "text": "BMI"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "effectiveDateTime": "2025-10-26T05:08:21.586Z",
+    "valueQuantity": {
+      "value": "20.48",
+      "unit": "kg/m2",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg/m2"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "9fc23397-7bfd-40aa-9bf7-539c36e96d04",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
+        }
+      ],
+      "text": "Heart Rate"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    },
+    "effectiveDateTime": "2025-10-27T05:06:48.119Z",
+    "valueQuantity": {
+      "value": "72.8",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "e923bc26-6906-4b70-97eb-3d3d9b8c73e7",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        }
+      ],
+      "text": "Height"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    },
+    "effectiveDateTime": "2025-10-27T05:16:16.496Z",
+    "valueQuantity": {
+      "value": "219.7",
+      "unit": "cm",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "bcf1392a-7bc8-4bbf-876c-1e41466109b0",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body weight"
+        }
+      ],
+      "text": "Weight"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    },
+    "effectiveDateTime": "2025-10-27T04:40:55.663Z",
+    "valueQuantity": {
+      "value": "57.98",
+      "unit": "kg",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "6e8db87e-e1e5-4818-a245-c7cb8ede1a7f",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic blood pressure"
+        }
+      ],
+      "text": "Systolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+    },
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    },
+    "effectiveDateTime": "2025-10-28T04:41:30.656Z",
+    "valueQuantity": {
+      "value": "111.9",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "8637e984-7ee6-4901-97a5-bc89ecf75f0f",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "Diastolic blood pressure"
+        }
+      ],
+      "text": "Diastolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+    },
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    },
+    "effectiveDateTime": "2025-10-28T04:57:02.179Z",
+    "valueQuantity": {
+      "value": "59.67",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "940034f6-bd52-4b05-abfa-ffdb261a4f62",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        }
+      ],
+      "text": "Height"
+    },
+    "subject": {
+      "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+    },
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    },
+    "effectiveDateTime": "2025-10-28T04:53:44.447Z",
+    "valueQuantity": {
+      "value": "182.12",
+      "unit": "cm",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "dd30b1af-ee40-474d-bae1-3cf68dd09a3d",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Temperature"
+    },
+    "subject": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "encounter": {
+      "reference": "Encounter/9adbda80-8af4-4d8e-8a8e-c886f6d14584"
+    },
+    "effectiveDateTime": "2025-10-29T04:53:33.536Z",
+    "valueQuantity": {
+      "value": "35.81",
+      "unit": "Cel",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "928b53ec-21d0-457a-bc54-94ea9513c720",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8867-4",
+          "display": "Heart rate"
+        }
+      ],
+      "text": "Heart Rate"
+    },
+    "subject": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "encounter": {
+      "reference": "Encounter/9adbda80-8af4-4d8e-8a8e-c886f6d14584"
+    },
+    "effectiveDateTime": "2025-10-29T04:37:21.423Z",
+    "valueQuantity": {
+      "value": "55.22",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "06d728da-75f8-482c-a538-180e66ac5286",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body weight"
+        }
+      ],
+      "text": "Weight"
+    },
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    },
+    "effectiveDateTime": "2025-10-30T04:54:36.996Z",
+    "valueQuantity": {
+      "value": "82.16",
+      "unit": "kg",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "e41eeb51-1665-4a58-af7e-816e13125ca6",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        }
+      ],
+      "text": "Height"
+    },
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    },
+    "effectiveDateTime": "2025-10-30T04:47:18.024Z",
+    "valueQuantity": {
+      "value": "168.59",
+      "unit": "cm",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "efeeec66-69c7-44d8-a5b0-4bd15847ad69",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory Rate"
+    },
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    },
+    "effectiveDateTime": "2025-10-30T04:34:41.486Z",
+    "valueQuantity": {
+      "value": "18.28",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "41cad257-05bf-4578-9929-afcd4232dcc0",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index"
+        }
+      ],
+      "text": "BMI"
+    },
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    },
+    "effectiveDateTime": "2025-10-30T05:08:48.021Z",
+    "valueQuantity": {
+      "value": "21.42",
+      "unit": "kg/m2",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg/m2"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "a3ba83d0-e406-489b-877d-bb6846c14051",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body mass index"
+        }
+      ],
+      "text": "BMI"
+    },
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    },
+    "effectiveDateTime": "2025-10-31T05:01:25.898Z",
+    "valueQuantity": {
+      "value": "21.32",
+      "unit": "kg/m2",
+      "system": "http://unitsofmeasure.org",
+      "code": "kg/m2"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "2bdb4121-db46-420a-8902-91fd6d2ae3cd",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory Rate"
+    },
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    },
+    "effectiveDateTime": "2025-10-31T05:06:55.159Z",
+    "valueQuantity": {
+      "value": "16.95",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "10aaef54-6fe5-41fa-bdad-08718556bab0",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2708-6",
+          "display": "Oxygen saturation in Arterial blood"
+        }
+      ],
+      "text": "O2 Saturation"
+    },
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    },
+    "effectiveDateTime": "2025-11-01T04:34:23.969Z",
+    "valueQuantity": {
+      "value": "105.19",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "a915227a-facb-490b-b531-19c80183daf2",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory Rate"
+    },
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    },
+    "effectiveDateTime": "2025-11-01T04:46:53.888Z",
+    "valueQuantity": {
+      "value": "15.66",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "29e299b1-1c88-427a-9bb7-1b36d3a9ffc7",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic blood pressure"
+        }
+      ],
+      "text": "Systolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    },
+    "effectiveDateTime": "2025-11-02T04:34:14.876Z",
+    "valueQuantity": {
+      "value": "149.97",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "6b07fe54-434f-4f59-9bed-e6b6dfa45847",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "Diastolic blood pressure"
+        }
+      ],
+      "text": "Diastolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    },
+    "effectiveDateTime": "2025-11-02T04:48:47.610Z",
+    "valueQuantity": {
+      "value": "81.29",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "f0e8b9af-0c28-41e2-827d-44eb9bb22508",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2708-6",
+          "display": "Oxygen saturation in Arterial blood"
+        }
+      ],
+      "text": "O2 Saturation"
+    },
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    },
+    "effectiveDateTime": "2025-11-02T04:54:44.212Z",
+    "valueQuantity": {
+      "value": "97.34",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "9c2586e2-4383-4949-a5e2-0a38d0befa9f",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2708-6",
+          "display": "Oxygen saturation in Arterial blood"
+        }
+      ],
+      "text": "O2 Saturation"
+    },
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    },
+    "effectiveDateTime": "2025-11-03T05:08:10.650Z",
+    "valueQuantity": {
+      "value": "90.23",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "37107b43-f4d0-4e77-b46e-9d521eed5c2e",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8310-5",
+          "display": "Body temperature"
+        }
+      ],
+      "text": "Temperature"
+    },
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    },
+    "effectiveDateTime": "2025-11-03T04:44:59.866Z",
+    "valueQuantity": {
+      "value": "39.17",
+      "unit": "Cel",
+      "system": "http://unitsofmeasure.org",
+      "code": "Cel"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "845dc574-2888-43e3-975e-43246671333e",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "9279-1",
+          "display": "Respiratory rate"
+        }
+      ],
+      "text": "Respiratory Rate"
+    },
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "encounter": {
+      "reference": "Encounter/1ec4f612-451f-4d07-9082-7da7f8e68b73"
+    },
+    "effectiveDateTime": "2025-11-04T04:30:13.574Z",
+    "valueQuantity": {
+      "value": "20.21",
+      "unit": "/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "/min"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "75bfa96d-350d-4ae2-a22d-12792fe080fe",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body height"
+        }
+      ],
+      "text": "Height"
+    },
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "encounter": {
+      "reference": "Encounter/1ec4f612-451f-4d07-9082-7da7f8e68b73"
+    },
+    "effectiveDateTime": "2025-11-04T05:08:25.313Z",
+    "valueQuantity": {
+      "value": "185.04",
+      "unit": "cm",
+      "system": "http://unitsofmeasure.org",
+      "code": "cm"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "70fd67cc-3a16-4180-b0d5-8d9d18337499",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8480-6",
+          "display": "Systolic blood pressure"
+        }
+      ],
+      "text": "Systolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "encounter": {
+      "reference": "Encounter/1ec4f612-451f-4d07-9082-7da7f8e68b73"
+    },
+    "effectiveDateTime": "2025-11-04T04:40:39.084Z",
+    "valueQuantity": {
+      "value": "144.28",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "3c55acaf-3f91-4a94-8274-ac65269bba56",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "8462-4",
+          "display": "Diastolic blood pressure"
+        }
+      ],
+      "text": "Diastolic blood pressure"
+    },
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "encounter": {
+      "reference": "Encounter/1ec4f612-451f-4d07-9082-7da7f8e68b73"
+    },
+    "effectiveDateTime": "2025-11-04T04:33:54.380Z",
+    "valueQuantity": {
+      "value": "68.4",
+      "unit": "mm[Hg]",
+      "system": "http://unitsofmeasure.org",
+      "code": "mm[Hg]"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "2a780c7a-a888-4ff6-a190-dabbc9cfce5a",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Hemoglobin"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "effectiveDateTime": "2025-10-22T17:22:15.783Z",
+    "valueQuantity": {
+      "value": "12.28",
+      "unit": "g/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "g/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "0f55c2d9-dc82-468d-a485-dda2bed20a4b",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood"
+        }
+      ],
+      "text": "Platelet Count"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "effectiveDateTime": "2025-10-22T04:36:51.168Z",
+    "valueQuantity": {
+      "value": "525.04",
+      "unit": "10*3/uL",
+      "system": "http://unitsofmeasure.org",
+      "code": "10*3/uL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "af825529-2600-41f1-b39d-3dd9048b4cf5",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Hemoglobin"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    },
+    "effectiveDateTime": "2025-10-25T15:13:43.911Z",
+    "valueQuantity": {
+      "value": "15.02",
+      "unit": "g/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "g/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "acee74b2-ed4c-4807-a35a-47bcaae78466",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood"
+        }
+      ],
+      "text": "Platelet Count"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    },
+    "effectiveDateTime": "2025-10-25T16:26:59.887Z",
+    "valueQuantity": {
+      "value": "452.95",
+      "unit": "10*3/uL",
+      "system": "http://unitsofmeasure.org",
+      "code": "10*3/uL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "fe46d37f-3d24-4f20-a40e-09f1d29d4286",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Blood Glucose"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    },
+    "effectiveDateTime": "2025-10-25T21:16:38.199Z",
+    "valueQuantity": {
+      "value": "72.43",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "e5a4ece0-515f-4ca5-bf3e-9e9634b941e3",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26449-9",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        }
+      ],
+      "text": "HbA1c"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "effectiveDateTime": "2025-10-26T23:04:07.034Z",
+    "valueQuantity": {
+      "value": "5.26",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "67176ad2-7596-4cec-b790-94c9e3e2aa8a",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Total Cholesterol"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "effectiveDateTime": "2025-10-26T14:58:47.353Z",
+    "valueQuantity": {
+      "value": "19.27",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "ad56505c-b9d3-4cd0-a994-7e20308a6ffd",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2160-0",
+          "display": "Creatinine [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Creatinine"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "effectiveDateTime": "2025-10-26T15:37:45.654Z",
+    "valueQuantity": {
+      "value": "0.61",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "f90906fb-525d-48fd-9ce8-5a30be645364",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Blood Glucose"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    },
+    "effectiveDateTime": "2025-10-27T07:03:50.076Z",
+    "valueQuantity": {
+      "value": "103",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "371c4652-c1b4-4bb2-b9b3-70cff5e191d6",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Hemoglobin"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    },
+    "effectiveDateTime": "2025-10-27T23:54:19.606Z",
+    "valueQuantity": {
+      "value": "17.95",
+      "unit": "g/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "g/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "feb7c8f1-b509-45ee-8317-19c86d283a0c",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood"
+        }
+      ],
+      "text": "Platelet Count"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    },
+    "effectiveDateTime": "2025-10-27T14:20:33.703Z",
+    "valueQuantity": {
+      "value": "527",
+      "unit": "10*3/uL",
+      "system": "http://unitsofmeasure.org",
+      "code": "10*3/uL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "2507472c-edc2-4d31-ac07-8d34dc072ab6",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Hemoglobin"
+    },
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    },
+    "effectiveDateTime": "2025-10-31T11:03:38.522Z",
+    "valueQuantity": {
+      "value": "10.66",
+      "unit": "g/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "g/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "L",
+            "display": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "6350be7d-df89-447f-91c4-b6cc8b211407",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood"
+        }
+      ],
+      "text": "Platelet Count"
+    },
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    },
+    "effectiveDateTime": "2025-11-01T03:35:05.650Z",
+    "valueQuantity": {
+      "value": "494.57",
+      "unit": "10*3/uL",
+      "system": "http://unitsofmeasure.org",
+      "code": "10*3/uL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "c35121c5-5f0e-45d0-a3bf-27ee380f3931",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "White Blood Cell Count"
+        }
+      ],
+      "text": "WBC"
+    },
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "encounter": {
+      "reference": "Encounter/cab3e09e-aa05-4ac0-834e-44aa76a86d50"
+    },
+    "effectiveDateTime": "2025-10-31T14:03:41.200Z",
+    "valueQuantity": {
+      "value": "8.26",
+      "unit": "10*3/uL",
+      "system": "http://unitsofmeasure.org",
+      "code": "10*3/uL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "8fcae0a8-262a-40cd-8790-799c207f545f",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood"
+        }
+      ],
+      "text": "Platelet Count"
+    },
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    },
+    "effectiveDateTime": "2025-11-01T12:50:21.851Z",
+    "valueQuantity": {
+      "value": "478.42",
+      "unit": "10*3/uL",
+      "system": "http://unitsofmeasure.org",
+      "code": "10*3/uL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "871770a9-cff0-4f20-9d7a-e09afb0f680e",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26449-9",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        }
+      ],
+      "text": "HbA1c"
+    },
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    },
+    "effectiveDateTime": "2025-11-01T16:14:03.213Z",
+    "valueQuantity": {
+      "value": "4.71",
+      "unit": "%",
+      "system": "http://unitsofmeasure.org",
+      "code": "%"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "9dc15afc-dea8-4a4f-a1bc-44d3064b6be5",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Hemoglobin"
+    },
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "encounter": {
+      "reference": "Encounter/51712ad3-9758-42b0-9797-c1257603aaf0"
+    },
+    "effectiveDateTime": "2025-11-01T12:39:08.484Z",
+    "valueQuantity": {
+      "value": "10.6",
+      "unit": "g/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "g/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "L",
+            "display": "Low"
           }
         ]
       }

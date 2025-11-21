@@ -1,0 +1,130 @@
+[
+  {
+    "resourceType": "Procedure",
+    "id": "35ec10cd-229d-4dd3-97e9-899540006256",
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "71651007",
+          "display": "X-Ray"
+        }
+      ],
+      "text": "X-Ray done"
+    },
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    },
+    "performedDateTime": "2025-10-21T04:48:55.309Z",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/605fef2c-f7c0-48f4-95c4-e8a0864af7e1"
+        }
+      }
+    ],
+    "location": {
+      "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+    }
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "ac64675c-8f92-4077-b619-592260bc3dab",
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "399208008",
+          "display": "Urinalysis"
+        }
+      ],
+      "text": "Urine Test"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "performedDateTime": "2025-10-22T04:43:54.146Z",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/605fef2c-f7c0-48f4-95c4-e8a0864af7e1"
+        }
+      }
+    ],
+    "location": {
+      "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+    }
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "27f9ae43-7464-48e8-ab03-021c025b300b",
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "399208008",
+          "display": "Urinalysis"
+        }
+      ],
+      "text": "Urine Test"
+    },
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "encounter": {
+      "reference": "Encounter/40a881d6-0b5c-4f84-b62d-5ade983d270f"
+    },
+    "performedDateTime": "2025-11-02T06:28:58.231Z",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        }
+      }
+    ],
+    "location": {
+      "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+    }
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "797928a5-16a9-412c-b89d-a957dbfc93d7",
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "168499009",
+          "display": "Physical examination"
+        }
+      ],
+      "text": "Physical Exam"
+    },
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "encounter": {
+      "reference": "Encounter/44dace26-be7f-4115-bbac-097f805bf08c"
+    },
+    "performedDateTime": "2025-11-03T05:56:15.769Z",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/6893b4e6-f9f3-4bd2-b789-b8c387ce0fcd"
+        }
+      }
+    ],
+    "location": {
+      "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+    }
+  }
+]

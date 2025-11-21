@@ -56,7 +56,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-18T05:30:00.000Z"
+    "authoredOn": "2025-11-18T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -115,7 +118,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-19T05:30:00.000Z"
+    "authoredOn": "2025-11-19T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -174,7 +180,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-20T05:30:00.000Z"
+    "authoredOn": "2025-11-20T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -233,7 +242,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-21T05:30:00.000Z"
+    "authoredOn": "2025-11-21T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/fcc399d3-409e-4b9f-bfed-17bceb7aebf6"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -292,7 +304,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-22T05:30:00.000Z"
+    "authoredOn": "2025-11-22T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/b90f54b8-fecc-4db7-93b2-ef423fa4a311"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -351,7 +366,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-23T05:30:00.000Z"
+    "authoredOn": "2025-11-23T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -410,7 +428,10 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-24T05:30:00.000Z"
+    "authoredOn": "2025-11-24T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/502a1516-f185-46c4-b73f-f916c8f49709"
+    }
   },
   {
     "resourceType": "MedicationRequest",
@@ -469,6 +490,385 @@
         ]
       }
     ],
-    "authoredOn": "2025-11-25T05:30:00.000Z"
+    "authoredOn": "2025-11-25T05:30:00.000Z",
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    }
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "ad383f00-140a-473f-a386-6e49ae0ea232",
+    "status": "active",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "encounter": {
+      "reference": "Encounter/9d6a0ba4-d723-4353-9229-8e7c157aaa7c"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Levothyroxine 50 MCG Oral Tablet"
+        }
+      ],
+      "text": "Levothyroxine 50mcg"
+    },
+    "authoredOn": "2025-10-21T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "319b352c-44e3-41b9-b7ce-cd11e931bcc5",
+    "status": "active",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "encounter": {
+      "reference": "Encounter/69993ff4-ac0b-489f-9fb9-6eeb0746febc"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Levothyroxine 50 MCG Oral Tablet"
+        }
+      ],
+      "text": "Levothyroxine 50mcg"
+    },
+    "authoredOn": "2025-10-22T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "c4101505-3101-44e4-8830-ca71da921fe7",
+    "status": "completed",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "encounter": {
+      "reference": "Encounter/a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197806",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10mg"
+    },
+    "authoredOn": "2025-10-23T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "1d0fc9d6-c4c1-42d3-8d62-eaa7aa7e488b",
+    "status": "active",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "encounter": {
+      "reference": "Encounter/81f5a2a4-d3c8-4b2a-b562-37801980ca68"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Albuterol 90 MCG/ACTUAT Inhalant Solution"
+        }
+      ],
+      "text": "Albuterol Inhaler"
+    },
+    "authoredOn": "2025-10-26T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "be331cc3-41dd-4ed7-b57b-2d2e5177ebf3",
+    "status": "active",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+    },
+    "encounter": {
+      "reference": "Encounter/9de92d86-643d-4a80-81e0-5dd750664cc6"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Omeprazole 20 MG Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20mg"
+    },
+    "authoredOn": "2025-10-28T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "70bb4b8b-099d-4d9f-a5db-89c80b79722b",
+    "status": "completed",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "encounter": {
+      "reference": "Encounter/9adbda80-8af4-4d8e-8a8e-c886f6d14584"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Levothyroxine 50 MCG Oral Tablet"
+        }
+      ],
+      "text": "Levothyroxine 50mcg"
+    },
+    "authoredOn": "2025-10-29T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/605fef2c-f7c0-48f4-95c4-e8a0864af7e1"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "e71accff-13bb-442e-94b2-8d11cac17dc5",
+    "status": "completed",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "encounter": {
+      "reference": "Encounter/b304b557-c097-4bb8-86c6-a8401adc940e"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5mg"
+    },
+    "authoredOn": "2025-10-30T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/6893b4e6-f9f3-4bd2-b789-b8c387ce0fcd"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "a8e3752c-0d96-4fd3-a94c-bd143d3da5b9",
+    "status": "active",
+    "intent": "order",
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "encounter": {
+      "reference": "Encounter/1ec4f612-451f-4d07-9082-7da7f8e68b73"
+    },
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197808",
+          "display": "Omeprazole 20 MG Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20mg"
+    },
+    "authoredOn": "2025-11-04T04:30:00.000Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ]
   }
 ]
