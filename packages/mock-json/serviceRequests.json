@@ -1,0 +1,1227 @@
+[
+  {
+    "resourceType": "ServiceRequest",
+    "id": "683dd3f5-2515-4b4a-a557-b15bbefe2ef3",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/da688148-214b-40db-8cfc-46e67ef45e22"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "5900-6",
+          "display": "INR in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "text": "INR"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "filler-order",
+    "priority": "urgent",
+    "authoredOn": "2025-10-21T15:36:47.251Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "No special preparation required"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "b1d169fa-9faf-42bd-b4bd-b7fafd36b7f4",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/da688148-214b-40db-8cfc-46e67ef45e22"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24323-8",
+          "display": "Comprehensive Metabolic Panel"
+        }
+      ],
+      "text": "CMP"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "urgent",
+    "authoredOn": "2025-10-30T22:29:55.432Z",
+    "requester": {
+      "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+    },
+    "doNotPerform": true,
+    "patientInstruction": "Avoid strenuous exercise 24 hours before test"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "3801d75e-86f2-4417-8e4c-9462685d1ae4",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6599-5",
+          "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin T"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "stat",
+    "authoredOn": "2024-12-24T20:44:39.764Z",
+    "requester": {
+      "reference": "Practitioner/52ea772c-995e-4557-bbd6-c57cc8d0ee02"
+    },
+    "patientInstruction": "Avoid strenuous exercise 24 hours before test",
+    "insurance": [
+      {
+        "reference": "Coverage/ec7d3924-4aba-4e39-9fcd-0cbae5bd9230"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "91d842e1-5cea-4f9c-b098-137bc084a493",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin I"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "urgent",
+    "authoredOn": "2025-02-04T23:39:10.056Z",
+    "requester": {
+      "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+    },
+    "patientInstruction": "Drink plenty of water before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/86a2bdb5-0165-4d67-822b-c0b53b85632d"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "eaf6db8c-5a0a-47eb-83a7-8f3c4d779543",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Triglycerides"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "asap",
+    "authoredOn": "2025-05-10T19:31:25.653Z",
+    "requester": {
+      "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+    },
+    "patientInstruction": "Fast for 12 hours before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/e581f4b1-c11f-496c-bd55-18f23f255d6b"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "f8d53ef5-3952-4c91-998f-2689da30d1a1",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "5900-6",
+          "display": "INR in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "text": "INR"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "routine",
+    "authoredOn": "2025-02-16T00:29:32.013Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "patientInstruction": "No special preparation required"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "79ebd6cd-2752-49eb-9bac-6343f858abd2",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24325-3",
+          "display": "Thyroid Stimulating Hormone"
+        }
+      ],
+      "text": "TSH"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "routine",
+    "authoredOn": "2025-09-07T09:08:07.213Z",
+    "requester": {
+      "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+    },
+    "patientInstruction": "Drink plenty of water before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/7a219d73-0124-421e-84bb-0d6a56c23e2a"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "c0327eed-01fa-45f3-861a-96140d9641c0",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "33747-0",
+          "display": "BNP [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "BNP"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "asap",
+    "authoredOn": "2025-11-11T09:11:21.395Z",
+    "requester": {
+      "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    },
+    "patientInstruction": "Wear comfortable clothing"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "87c66216-cc36-4b19-881b-fef4eb8af460",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "1968-7",
+          "display": "Bilirubin.direct [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Direct Bilirubin"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "routine",
+    "authoredOn": "2025-01-10T05:49:36.308Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "patientInstruction": "Fast for 12 hours before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/bc0ffdbc-1eb2-4a3e-8d87-e9944d0d346d"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "3b7c6176-ce53-4941-817e-35807eb4afc6",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin I"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "routine",
+    "authoredOn": "2025-08-20T22:50:07.375Z",
+    "requester": {
+      "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+    },
+    "patientInstruction": "No special preparation required"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "ad66aeb2-6e90-403e-a75c-aa5ae2a71546",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "14647-2",
+          "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
+        }
+      ],
+      "text": "Chlamydia Test"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "filler-order",
+    "priority": "asap",
+    "authoredOn": "2025-07-29T12:07:33.345Z",
+    "requester": {
+      "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
+    },
+    "patientInstruction": "Wear comfortable clothing"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "a6746b9d-5951-4bcf-81ba-1cd8780aeccd",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24357-6",
+          "display": "Lipid Panel"
+        }
+      ],
+      "text": "Lipid Panel"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "urgent",
+    "authoredOn": "2025-09-22T13:03:19.643Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "Take medication as usual"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "cd7ef742-2cb8-43a0-898a-b4d419e15459",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24357-6",
+          "display": "Lipid Panel"
+        }
+      ],
+      "text": "Lipid Panel"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "routine",
+    "authoredOn": "2025-03-27T07:01:35.068Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "Fast for 12 hours before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/7d78ef8f-54c9-4f42-a609-c674462c437c"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "75b0b740-f7b5-43b6-8b0a-89aad5cc63c1",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "1920-8",
+          "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "AST"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "urgent",
+    "authoredOn": "2025-06-08T06:08:21.839Z",
+    "requester": {
+      "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+    }
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "9ae73b10-387d-4143-aeeb-7c8688197a78",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Blood Glucose"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "order",
+    "priority": "stat",
+    "authoredOn": "2025-11-07T03:01:18.658Z",
+    "requester": {
+      "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    }
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "bcb7547a-9533-4c57-a56e-e0d03949b702",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "14647-2",
+          "display": "Chlamydia trachomatis [Presence] in Specimen by Organism specific culture"
+        }
+      ],
+      "text": "Chlamydia Test"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "stat",
+    "authoredOn": "2025-06-25T19:43:20.025Z",
+    "requester": {
+      "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+    },
+    "patientInstruction": "Fast for 12 hours before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/ca43e916-e90a-4132-ba35-c7411db02a9a"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "1e3d1958-dfa2-4e29-9316-800e84ba6fd7",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2324-2",
+          "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "ALT"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "filler-order",
+    "priority": "urgent",
+    "authoredOn": "2025-08-08T11:32:34.593Z",
+    "requester": {
+      "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
+    },
+    "patientInstruction": "Drink plenty of water before the test"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "ac9e923f-6f40-47c7-8e37-6fbe8b21be4c",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "HDL Cholesterol"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "urgent",
+    "authoredOn": "2025-02-04T03:42:56.290Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "patientInstruction": "Avoid strenuous exercise 24 hours before test"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "91629f8b-cd7a-4616-ade7-5fa55ef2aa9a",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Total Cholesterol"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "asap",
+    "authoredOn": "2025-08-19T15:38:57.235Z",
+    "requester": {
+      "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+    },
+    "patientInstruction": "Bring a list of current medications",
+    "insurance": [
+      {
+        "reference": "Coverage/deba4910-944a-4bea-a216-5e6b18bb147e"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "e57379fc-964a-4968-a473-5c17b9dddb60",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6599-5",
+          "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin T"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "urgent",
+    "authoredOn": "2025-03-31T19:24:06.157Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "Drink plenty of water before the test"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "76d7ce88-0fc1-4772-958c-3e35e9e72729",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "5902-2",
+          "display": "Prothrombin time (PT)"
+        }
+      ],
+      "text": "PT"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "order",
+    "priority": "routine",
+    "authoredOn": "2025-07-03T20:16:38.895Z",
+    "requester": {
+      "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+    },
+    "patientInstruction": "Wear comfortable clothing"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "e7a1a845-0935-443e-bf75-e8f89988a4b8",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "49765-1",
+          "display": "Calcium [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Calcium"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "order",
+    "priority": "urgent",
+    "authoredOn": "2025-07-07T12:19:04.631Z",
+    "requester": {
+      "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
+    },
+    "patientInstruction": "Bring a list of current medications",
+    "insurance": [
+      {
+        "reference": "Coverage/70b3c944-925a-41a1-bf6a-bb83e2a7486f"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "194ff78d-be47-415d-bf08-af5a6519faf1",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Total Cholesterol"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "stat",
+    "authoredOn": "2025-06-29T01:21:00.256Z",
+    "requester": {
+      "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+    },
+    "doNotPerform": true,
+    "patientInstruction": "Fast for 12 hours before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/add9123d-17fa-4029-b167-b9ea3c63b581"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "e91d1e60-0c73-4222-8e9a-f4df9b2b810b",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24325-3",
+          "display": "Thyroid Stimulating Hormone"
+        }
+      ],
+      "text": "TSH"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "urgent",
+    "authoredOn": "2025-07-13T22:28:44.887Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "Take medication as usual",
+    "insurance": [
+      {
+        "reference": "Coverage/22059041-e82e-47da-b41c-5c7d36a62efe"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "06d3d171-48c6-465f-a4ea-bd21b3a94832",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24320-4",
+          "display": "Basic Metabolic Panel"
+        }
+      ],
+      "text": "BMP"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "asap",
+    "authoredOn": "2025-11-15T07:18:38.841Z",
+    "requester": {
+      "reference": "Practitioner/6893b4e6-f9f3-4bd2-b789-b8c387ce0fcd"
+    },
+    "insurance": [
+      {
+        "reference": "Coverage/2c5b43ae-2ae2-493b-a64b-899fa60c6377"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "00624cb3-1d50-4921-824e-52b3dfaa5a74",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "HDL Cholesterol"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "routine",
+    "authoredOn": "2025-05-18T06:41:28.356Z",
+    "requester": {
+      "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
+    },
+    "patientInstruction": "Wear comfortable clothing"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "208b1f36-3299-402c-aa04-8a9cdab3812a",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2823-3",
+          "display": "Potassium [Moles/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Potassium"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "routine",
+    "authoredOn": "2024-11-21T14:52:48.693Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "No special preparation required",
+    "insurance": [
+      {
+        "reference": "Coverage/a68cf96b-9fbb-438e-97c5-414a37b9a8f1"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "29cff277-fad1-423a-bf1b-1236ab395430",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24323-8",
+          "display": "Comprehensive Metabolic Panel"
+        }
+      ],
+      "text": "CMP"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "asap",
+    "authoredOn": "2025-07-03T00:47:34.743Z",
+    "requester": {
+      "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    },
+    "patientInstruction": "No special preparation required"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "1100902c-ac9c-4f35-b83c-3175960d0117",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26449-9",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        }
+      ],
+      "text": "HbA1c"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "asap",
+    "authoredOn": "2025-04-14T05:50:36.830Z",
+    "requester": {
+      "reference": "Practitioner/6ec925cb-01e4-4708-830b-b145787adafe"
+    },
+    "patientInstruction": "No special preparation required"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "87fd65f3-e1c5-43e3-89f4-717b59a15733",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24356-8",
+          "display": "Complete Blood Count"
+        }
+      ],
+      "text": "CBC"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "routine",
+    "authoredOn": "2024-12-10T01:24:26.326Z",
+    "requester": {
+      "reference": "Practitioner/605fef2c-f7c0-48f4-95c4-e8a0864af7e1"
+    },
+    "insurance": [
+      {
+        "reference": "Coverage/291cf6b3-7238-4c80-af9c-004d97a8a77b"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "6d37f8d6-fdf9-41ae-aa87-dd0504a5d605",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "5902-2",
+          "display": "Prothrombin time (PT)"
+        }
+      ],
+      "text": "PT"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "routine",
+    "authoredOn": "2025-07-18T06:53:01.212Z",
+    "requester": {
+      "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+    },
+    "patientInstruction": "Take medication as usual",
+    "insurance": [
+      {
+        "reference": "Coverage/44c27d14-9335-4c8e-8751-636f4aa0629a"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "9f91e00c-dda1-461e-8a59-17fab1d68049",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "1920-8",
+          "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "AST"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "order",
+    "priority": "urgent",
+    "authoredOn": "2025-08-25T23:47:54.278Z",
+    "requester": {
+      "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    },
+    "patientInstruction": "Fast for 12 hours before the test",
+    "insurance": [
+      {
+        "reference": "Coverage/e55e9b06-1b82-40ae-9801-c7fcacc3964a"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "89148973-335e-43b9-903f-e781b3eef38c",
+    "status": "on-hold",
+    "subject": {
+      "reference": "Patient/c745d29d-17dc-409d-a352-7e890b0187da"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24320-4",
+          "display": "Basic Metabolic Panel"
+        }
+      ],
+      "text": "BMP"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "filler-order",
+    "priority": "asap",
+    "authoredOn": "2025-06-05T22:07:17.903Z",
+    "requester": {
+      "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
+    }
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "27e1db6f-ae03-4c61-be29-f4ae3a951e91",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/c745d29d-17dc-409d-a352-7e890b0187da"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24325-3",
+          "display": "Thyroid Stimulating Hormone"
+        }
+      ],
+      "text": "TSH"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "filler-order",
+    "priority": "stat",
+    "authoredOn": "2025-11-02T13:44:29.509Z",
+    "requester": {
+      "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+    },
+    "insurance": [
+      {
+        "reference": "Coverage/bc95dd04-601e-49b4-a735-901da2f833d3"
+      }
+    ]
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "0480bd76-4148-44fa-9c5d-f41e326bf81d",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/b38c9a69-2554-483a-8388-b684ec9a2479"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Hemoglobin"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "reflex-order",
+    "priority": "routine",
+    "authoredOn": "2025-01-03T18:39:42.120Z",
+    "requester": {
+      "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+    },
+    "patientInstruction": "Bring a list of current medications"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "09cde697-605f-466b-85a0-ff5deec26ea3",
+    "status": "revoked",
+    "subject": {
+      "reference": "Patient/b38c9a69-2554-483a-8388-b684ec9a2479"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2324-2",
+          "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "ALT"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "asap",
+    "authoredOn": "2025-02-27T12:03:30.233Z",
+    "requester": {
+      "reference": "Practitioner/6cb11f39-d571-4da5-a484-104262e04993"
+    },
+    "patientInstruction": "Wear comfortable clothing"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "d5c72d73-5ed1-4073-bfb3-e5296c5fe004",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/66007ad0-8ff8-4f5c-9d63-05aabe75b07e"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "1968-7",
+          "display": "Bilirubin.direct [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Direct Bilirubin"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "original-order",
+    "priority": "asap",
+    "authoredOn": "2025-08-30T19:07:11.112Z",
+    "requester": {
+      "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+    },
+    "patientInstruction": "Bring a list of current medications"
+  },
+  {
+    "resourceType": "ServiceRequest",
+    "id": "04969cfc-2c67-42d0-aa59-89e6d982803f",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/ff74e351-4f2b-404c-8a7f-30e6c89101ac"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24356-8",
+          "display": "Complete Blood Count"
+        }
+      ],
+      "text": "CBC"
+    },
+    "performer": [
+      {
+        "reference": "Organization/34c95d53-17b0-4985-855e-5db90d67c161"
+      }
+    ],
+    "intent": "instance-order",
+    "priority": "stat",
+    "authoredOn": "2025-09-17T06:45:21.415Z",
+    "requester": {
+      "reference": "Practitioner/6ec925cb-01e4-4708-830b-b145787adafe"
+    },
+    "insurance": [
+      {
+        "reference": "Coverage/85b9dc4f-309d-4773-b006-b49b858c41ae"
+      }
+    ]
+  }
+]

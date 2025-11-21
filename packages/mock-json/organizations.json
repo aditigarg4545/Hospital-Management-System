@@ -1,0 +1,37 @@
+[
+  {
+    "resourceType": "Organization",
+    "id": "34c95d53-17b0-4985-855e-5db90d67c161",
+    "name": "CityCare Hospital",
+    "identifier": [
+      {
+        "system": "http://hospital-registry.example.com",
+        "value": "HOSP-001"
+      }
+    ],
+    "active": true,
+    "address": [
+      {
+        "line": [
+          "123 Medical Center Drive"
+        ],
+        "city": "Delhi",
+        "state": "Delhi",
+        "postalCode": "110001",
+        "country": "IN"
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+91-11-2345-6789",
+        "use": "work"
+      },
+      {
+        "system": "email",
+        "value": "info@citycarehospital.com",
+        "use": "work"
+      }
+    ]
+  }
+]

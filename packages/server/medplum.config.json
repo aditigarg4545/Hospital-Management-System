@@ -8,6 +8,8 @@
   "signingKeyPassphrase": "",
   "googleClientId": "",
   "googleClientSecret": "",
+  "maxJsonSize": "1mb",
+  "maxBatchSize": "50mb",
   "recaptchaSiteKey": "",
   "recaptchaSecretKey": "",
   "botLambdaRoleArn": "",

@@ -21,6 +21,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "migrate": "ts-node --transpileOnly src/migrations/migrate.ts",
+    "seed:mock-data": "ts-node --transpileOnly src/seed-mock-data.ts",
     "start": "node --require ./dist/otel/instrumentation.js dist/index.js",
     "test": "jest",
     "test:seed": "jest seed.test.ts --testTimeout=400000"

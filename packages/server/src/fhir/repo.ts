@@ -29,6 +29,7 @@ import {
   flatMapFilter,
   forbidden,
   formatSearchQuery,
+  getDisplayString,
   getReferenceString,
   getStatus,
   gone,
@@ -36,6 +37,7 @@ import {
   isNotFound,
   isObject,
   isOk,
+  isReference,
   isResource,
   isResourceWithId,
   isUUID,
@@ -799,6 +801,9 @@ export class Repository extends FhirRepository<PoolClient> implements Disposable
       resultMeta.accounts = accounts;
     }
     resultMeta.compartment = this.getCompartments(result);
+
+    // Populate reference display properties dynamically (reads from database)
+    await this.populateReferenceDisplays(result);
 
     // Validate resource after all modifications and touchups above are done
     await this.validateResource(result);
@@ -2671,6 +2676,56 @@ export class Repository extends FhirRepository<PoolClient> implements Disposable
     if (this.closed) {
       throw new Error('Already closed');
     }
+  }
+
+  /**
+   * Recursively populates display properties on all references in a resource.
+   * This ensures references show readable names instead of IDs in the UI.
+   * @param resource - The resource to process.
+   */
+  private async populateReferenceDisplays(resource: Resource): Promise<void> {
+    const processValue = async (value: any): Promise<void> => {
+      if (!value) {
+        return;
+      }
+
+      if (isReference(value)) {
+        // If reference doesn't have display, try to read the referenced resource and populate it
+        if (value.reference && !value.display) {
+          try {
+            const [resourceType, id] = value.reference.split('/');
+            if (resourceType && id && isUUID(id)) {
+              try {
+                const referencedResource = await this.readResource(resourceType as ResourceType, id);
+                const display = getDisplayString(referencedResource);
+                if (display && display !== value.reference) {
+                  value.display = display;
+                }
+              } catch (err) {
+                // Reference might not exist or not accessible, which is fine - skip it
+                // This is expected for some references (e.g., Coverage resources that don't exist)
+                console.log(err);
+              }
+            }
+          } catch (err) {
+            // Invalid reference format, skip it
+            console.log(err);
+          }
+        }
+      } else if (Array.isArray(value)) {
+        for (const item of value) {
+          await processValue(item);
+        }
+      } else if (typeof value === 'object') {
+        for (const key in value) {
+          if (Object.hasOwn(value, key)) {
+            await processValue(value[key]);
+          }
+        }
+      }
+    };
+
+    await processValue(resource);
   }
 }
 

@@ -1,0 +1,1202 @@
+[
+  {
+    "resourceType": "Appointment",
+    "id": "0267bc05-c82c-4566-87bf-31f541893801",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-20T03:30:00.000Z",
+    "end": "2025-11-20T04:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "1154acb6-85d6-459b-bf97-d4b50f8af207",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-20T04:30:00.000Z",
+    "end": "2025-11-20T05:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "fc5b3172-3812-48e3-a303-5eb0d11bd033",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-20T05:30:00.000Z",
+    "end": "2025-11-20T06:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "68e0f870-9da9-4a89-84b8-f5cf2ccffd6c",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-20T06:30:00.000Z",
+    "end": "2025-11-20T07:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "78f07018-29f7-4fc5-b4ca-7cb0d73cc160",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-20T07:30:00.000Z",
+    "end": "2025-11-20T08:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "f1e4ddb0-0d9c-4a76-ac4c-d71d0b8e1e52",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-21T08:30:00.000Z",
+    "end": "2025-11-21T09:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "15593d25-ef2a-4bb2-bfee-8ba62405e4a7",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-21T09:30:00.000Z",
+    "end": "2025-11-21T10:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "0f14a247-b955-4955-96e7-4ee25263194a",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/52ea772c-995e-4557-bbd6-c57cc8d0ee02"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-21T10:30:00.000Z",
+    "end": "2025-11-21T11:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "b6189f48-cdd2-49e2-9477-0a880078503c",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-21T03:30:00.000Z",
+    "end": "2025-11-21T04:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "ce29dda4-f011-4b9a-afff-e2c2c984271f",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-21T04:30:00.000Z",
+    "end": "2025-11-21T05:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "a29dd76b-a49f-49ec-affb-4a884cad3ae6",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-22T05:30:00.000Z",
+    "end": "2025-11-22T06:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "eecaa313-9f5a-41ec-8ef5-27e3ec0be389",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-22T06:30:00.000Z",
+    "end": "2025-11-22T07:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "4cc19b4a-959d-4d88-b3c4-93619f42f32c",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-22T07:30:00.000Z",
+    "end": "2025-11-22T08:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "34b56541-06c1-446a-aa51-e66286db6970",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-22T08:30:00.000Z",
+    "end": "2025-11-22T09:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "f6e6e072-2e14-43c0-a0ea-38fb714a2dd1",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-22T09:30:00.000Z",
+    "end": "2025-11-22T10:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "44daed32-cb12-4589-81cd-ebce366de4cf",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/c745d29d-17dc-409d-a352-7e890b0187da"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/52ea772c-995e-4557-bbd6-c57cc8d0ee02"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-23T10:30:00.000Z",
+    "end": "2025-11-23T11:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "43cdee33-14ff-4c29-a1f7-ebed83524029",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/b38c9a69-2554-483a-8388-b684ec9a2479"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-23T03:30:00.000Z",
+    "end": "2025-11-23T04:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "28ffdefd-01d3-49f2-af86-37702a271940",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/66007ad0-8ff8-4f5c-9d63-05aabe75b07e"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-23T04:30:00.000Z",
+    "end": "2025-11-23T05:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "b2533854-a763-4029-961d-7f2a5b0ad86d",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/ff74e351-4f2b-404c-8a7f-30e6c89101ac"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-23T05:30:00.000Z",
+    "end": "2025-11-23T06:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "9194ba40-f88c-48e1-9148-f2dba4f17ad2",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/da688148-214b-40db-8cfc-46e67ef45e22"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-23T06:30:00.000Z",
+    "end": "2025-11-23T07:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "62a964f3-a4ff-4eb0-b618-9cf4804a37e1",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-24T07:30:00.000Z",
+    "end": "2025-11-24T08:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "ef1f40d4-b9a0-4212-b189-776dc1cb99d7",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-24T08:30:00.000Z",
+    "end": "2025-11-24T09:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "b06300e7-e70b-48a4-bcff-c04e86d6b914",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-24T09:30:00.000Z",
+    "end": "2025-11-24T10:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "ce8e4fe4-f768-43d6-8cb1-9a51e830e5c0",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/52ea772c-995e-4557-bbd6-c57cc8d0ee02"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-24T10:30:00.000Z",
+    "end": "2025-11-24T11:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "5970a2fe-7f32-47cd-998d-5ed796d7fb8e",
+    "status": "booked",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Location/6c8264a2-eccf-45fa-90c2-72f454766c9e"
+        },
+        "status": "accepted"
+      }
+    ],
+    "start": "2025-11-24T03:30:00.000Z",
+    "end": "2025-11-24T04:00:00.000Z",
+    "description": "Regular consultation appointment",
+    "appointmentType": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+          "code": "ROUTINE",
+          "display": "Routine"
+        }
+      ]
+    },
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/service-type",
+            "code": "GP",
+            "display": "General Practice"
+          }
+        ]
+      }
+    ]
+  }
+]

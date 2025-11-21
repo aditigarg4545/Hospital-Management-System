@@ -1,0 +1,797 @@
+[
+  {
+    "resourceType": "Encounter",
+    "id": "9d6a0ba4-d723-4353-9229-8e7c157aaa7c",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-21T04:30:00.000Z",
+      "end": "2025-10-21T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "69993ff4-ac0b-489f-9fb9-6eeb0746febc",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-22T04:30:00.000Z",
+      "end": "2025-10-22T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "a029b0b1-e726-4b8c-b5ba-5f6d2a3312dd",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-23T04:30:00.000Z",
+      "end": "2025-10-23T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "fcc399d3-409e-4b9f-bfed-17bceb7aebf6",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-24T04:30:00.000Z",
+      "end": "2025-10-24T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "b90f54b8-fecc-4db7-93b2-ef423fa4a311",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-25T04:30:00.000Z",
+      "end": "2025-10-25T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "81f5a2a4-d3c8-4b2a-b562-37801980ca68",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-26T04:30:00.000Z",
+      "end": "2025-10-26T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "502a1516-f185-46c4-b73f-f916c8f49709",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-27T04:30:00.000Z",
+      "end": "2025-10-27T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "9de92d86-643d-4a80-81e0-5dd750664cc6",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/339aed7b-c372-4e57-a097-09bcfd2a874a"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/52ea772c-995e-4557-bbd6-c57cc8d0ee02"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-28T04:30:00.000Z",
+      "end": "2025-10-28T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "9adbda80-8af4-4d8e-8a8e-c886f6d14584",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/0533bcc6-9464-4bfd-81cb-352b4fe90b0d"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-29T04:30:00.000Z",
+      "end": "2025-10-29T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "b304b557-c097-4bb8-86c6-a8401adc940e",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/fdb58919-a64f-405b-afca-f97b60245b18"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/a76a456a-2c10-4425-bb9c-1a9ca5e0d66d"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-30T04:30:00.000Z",
+      "end": "2025-10-30T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "cab3e09e-aa05-4ac0-834e-44aa76a86d50",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/2590e786-bc49-41f4-bb8b-32ac9fcb988e"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-10-31T04:30:00.000Z",
+      "end": "2025-10-31T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "51712ad3-9758-42b0-9797-c1257603aaf0",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/9834d5f9-e03a-49a1-8199-18e6e016c7ac"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-11-01T04:30:00.000Z",
+      "end": "2025-11-01T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "40a881d6-0b5c-4f84-b62d-5ade983d270f",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/8b499f7c-1f2c-413b-8178-bc08bade81bc"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-11-02T04:30:00.000Z",
+      "end": "2025-11-02T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "44dace26-be7f-4115-bbac-097f805bf08c",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/835dcaf9-0d5b-4955-bd9b-4233b0692127"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-11-03T04:30:00.000Z",
+      "end": "2025-11-03T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "1ec4f612-451f-4d07-9082-7da7f8e68b73",
+    "status": "finished",
+    "subject": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/4799454c-3e60-4a4f-8ec4-28ce52cdd247"
+        }
+      }
+    ],
+    "location": [
+      {
+        "location": {
+          "reference": "Location/3f6ba871-c251-4af6-a038-8e6b02cd578b"
+        }
+      }
+    ],
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "period": {
+      "start": "2025-11-04T04:30:00.000Z",
+      "end": "2025-11-04T05:30:00.000Z"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Follow-up encounter"
+          }
+        ]
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Consultation"
+          }
+        ]
+      }
+    ]
+  }
+]

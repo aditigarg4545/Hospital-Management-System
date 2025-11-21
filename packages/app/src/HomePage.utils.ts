@@ -44,7 +44,7 @@ export function getDefaultFields(resourceType: string): string[] {
   const fields = [];
   switch (resourceType) {
     case 'Patient':
-      fields.push('name', 'birthDate', 'gender', 'email', 'address', 'active');
+      fields.push('name', 'birthDate', 'gender', 'telecom', 'address', 'active', 'managingOrganization');
       break;
     case 'AsyncJob':
       fields.push('id', '_lastUpdated', 'status', 'dataVersion');
@@ -62,13 +62,13 @@ export function getDefaultFields(resourceType: string): string[] {
       fields.push('id', '_lastUpdated');
       break;
     case 'Practitioner':
-      fields.push('name', 'gender', 'email', 'qualification', 'address', 'active');
+      fields.push('name', 'gender', 'qualification-code', 'address', 'telecom', 'communication', 'active');
       break;
     case 'Project':
       fields.push('id', '_lastUpdated');
       break;
     case 'Organization':
-      fields.push('id', '_lastUpdated');
+      fields.push('name', 'partOf', 'address', 'telecom', 'active', '_lastUpdated');
       break;
     case 'Questionnaire':
       fields.push('id', '_lastUpdated');
@@ -95,7 +95,7 @@ export function getDefaultFields(resourceType: string): string[] {
       fields.push('id', '_lastUpdated', 'code[x]', 'subject');
       break;
     case 'DiagnosticReport':
-      fields.push('id', '_lastUpdated', 'id', '_lastUpdated');
+      fields.push('patient', 'code', 'date', 'status', 'performer', 'result', 'conclusion', '_lastUpdated');
       break;
     case 'Observation':
       fields.push('id', '_lastUpdated', 'subject', 'code', 'status');
@@ -104,7 +104,21 @@ export function getDefaultFields(resourceType: string): string[] {
       fields.push('id', '_lastUpdated', 'subject');
       break;
     case 'ServiceRequest':
-      fields.push('id', '_lastUpdated', 'subject', 'code', 'status', 'orderDetail');
+      fields.push(
+        '_lastUpdated',
+        'patient',
+        'code',
+        'status',
+        'authored',
+        'insurance',
+        'intent',
+        'patientInstruction',
+        'performer',
+        'priority',
+        'priority-order',
+        // 'relevantHistory',
+        'requester'
+      );
       break;
     case 'Subscription':
       fields.push('id', '_lastUpdated', 'criteria');
@@ -113,7 +127,7 @@ export function getDefaultFields(resourceType: string): string[] {
       fields.push('id', '_lastUpdated', 'email');
       break;
   }
-  return ['id', '_lastUpdated'];
+  return fields.length > 0 ? fields : ['id', '_lastUpdated'];
 }
 
 function getDefaultFilters(resourceType: string): Filter[] | undefined {
