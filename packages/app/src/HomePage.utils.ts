@@ -71,7 +71,7 @@ export function getDefaultFields(resourceType: string): string[] {
       fields.push('name', 'partOf', 'address', 'telecom', 'active', '_lastUpdated');
       break;
     case 'Questionnaire':
-      fields.push('id', '_lastUpdated');
+      fields.push('title', 'description', 'subjectType', 'status', '_lastUpdated');
       break;
     case 'UserConfiguration':
       fields.push('id', '_lastUpdated', 'name');
