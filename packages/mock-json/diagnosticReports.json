@@ -36,7 +36,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/e7427eb9-5c57-4101-b01c-371770cf1654"
+        "reference": "Observation/e7427eb9-5c57-4101-b01c-371770cf1654",
+        "display": "INR Report Result"
       }
     ]
   },
@@ -77,7 +78,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/9f13074c-a31d-4672-ac94-6193f57c4178"
+        "reference": "Observation/9f13074c-a31d-4672-ac94-6193f57c4178",
+        "display": "CMP Report Result"
       }
     ]
   },
@@ -118,7 +120,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/6e6c9f3a-9ab4-486d-91fc-360d45bd84ab"
+        "reference": "Observation/6e6c9f3a-9ab4-486d-91fc-360d45bd84ab",
+        "display": "Troponin T Report Result"
       }
     ]
   },
@@ -159,7 +162,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/47e1dc89-c7cb-419d-bf22-a30b419d347f"
+        "reference": "Observation/47e1dc89-c7cb-419d-bf22-a30b419d347f",
+        "display": "Troponin I Report Result"
       }
     ]
   },
@@ -200,7 +204,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/c544477a-42c2-47ab-bb58-39e379c5d39b"
+        "reference": "Observation/c544477a-42c2-47ab-bb58-39e379c5d39b",
+        "display": "Triglycerides Report Result"
       }
     ]
   },
@@ -313,7 +318,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/4c6b7a4c-78ef-4b43-88b4-35f67795de5c"
+        "reference": "Observation/4c6b7a4c-78ef-4b43-88b4-35f67795de5c",
+        "display": "BNP Report Result"
       }
     ]
   },
@@ -390,7 +396,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/98196cb0-8861-460a-9f40-5bc277df6111"
+        "reference": "Observation/98196cb0-8861-460a-9f40-5bc277df6111",
+        "display": "Troponin I Report Result"
       }
     ]
   },
@@ -467,7 +474,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/18b756a8-ac54-457c-a80d-a407d715039e"
+        "reference": "Observation/18b756a8-ac54-457c-a80d-a407d715039e",
+        "display": "Lipid Panel Report Result"
       }
     ]
   },
@@ -508,7 +516,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/7a535078-f0be-45ad-b3de-db8463893a0c"
+        "reference": "Observation/7a535078-f0be-45ad-b3de-db8463893a0c",
+        "display": "Lipid Panel Report Result"
       }
     ]
   },
@@ -585,7 +594,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/c959f228-4aef-40c2-95d4-5d3eafa51b10"
+        "reference": "Observation/c959f228-4aef-40c2-95d4-5d3eafa51b10",
+        "display": "Blood Glucose Report Result"
       }
     ]
   },
@@ -662,7 +672,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/1b4ec737-6bea-4ab1-85e9-0921971dbfe9"
+        "reference": "Observation/1b4ec737-6bea-4ab1-85e9-0921971dbfe9",
+        "display": "ALT Report Result"
       }
     ]
   },
@@ -739,7 +750,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/8098bad9-6e7b-476b-bc86-49256ae8f787"
+        "reference": "Observation/8098bad9-6e7b-476b-bc86-49256ae8f787",
+        "display": "Total Cholesterol Report Result"
       }
     ]
   },
@@ -852,7 +864,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/06df557a-ce90-4338-858f-9ec04bd1eb49"
+        "reference": "Observation/06df557a-ce90-4338-858f-9ec04bd1eb49",
+        "display": "Calcium Report Result"
       }
     ]
   },
@@ -1001,7 +1014,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/e043fa61-02be-4f96-94d4-e278312d84fe"
+        "reference": "Observation/e043fa61-02be-4f96-94d4-e278312d84fe",
+        "display": "HDL Cholesterol Report Result"
       }
     ]
   },
@@ -1042,7 +1056,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/14b68b9d-b2dc-4a47-8831-19b8f8a8c9a3"
+        "reference": "Observation/14b68b9d-b2dc-4a47-8831-19b8f8a8c9a3",
+        "display": "Potassium Report Result"
       }
     ]
   },
@@ -1083,7 +1098,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/3834dd5b-6ff2-4600-b521-416a0e321f97"
+        "reference": "Observation/3834dd5b-6ff2-4600-b521-416a0e321f97",
+        "display": "CMP Report Result"
       }
     ]
   },
@@ -1124,7 +1140,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/6756da17-58a7-42da-99de-93a674fa99cc"
+        "reference": "Observation/6756da17-58a7-42da-99de-93a674fa99cc",
+        "display": "HbA1c Report Result"
       }
     ]
   },
@@ -1165,7 +1182,8 @@
     ],
     "result": [
       {
-        "reference": "Observation/9a820d59-f0b8-444a-af9d-69ca57f46c24"
+        "reference": "Observation/9a820d59-f0b8-444a-af9d-69ca57f46c24",
+        "display": "CBC Report Result"
       }
     ]
   }

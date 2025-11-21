@@ -1,0 +1,303 @@
+[
+  {
+    "resourceType": "Questionnaire",
+    "id": "d3f17237-79dd-4a89-b317-b89782ebbec0",
+    "status": "active",
+    "title": "Patient Intake Form",
+    "description": "Comprehensive patient intake questionnaire for new admissions",
+    "subjectType": [
+      "Patient"
+    ],
+    "item": [
+      {
+        "linkId": "1",
+        "text": "Personal Information",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "1.1",
+            "text": "Date of Birth",
+            "type": "date",
+            "required": true
+          },
+          {
+            "linkId": "1.2",
+            "text": "Gender",
+            "type": "choice",
+            "required": true,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "male",
+                  "display": "Male"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "female",
+                  "display": "Female"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "other",
+                  "display": "Other"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "1.3",
+            "text": "Emergency Contact Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.4",
+            "text": "Emergency Contact Phone",
+            "type": "string",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "2",
+        "text": "Medical History",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "2.1",
+            "text": "Do you have any known allergies?",
+            "type": "boolean",
+            "required": false
+          },
+          {
+            "linkId": "2.2",
+            "text": "If yes, please list your allergies",
+            "type": "text",
+            "enableWhen": [
+              {
+                "question": "2.1",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
+          },
+          {
+            "linkId": "2.3",
+            "text": "Current Medications",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "2.4",
+            "text": "Past Surgeries",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "2.5",
+            "text": "Family Medical History",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "linkId": "3",
+        "text": "Current Symptoms",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "3.1",
+            "text": "Primary Complaint",
+            "type": "text",
+            "required": true
+          },
+          {
+            "linkId": "3.2",
+            "text": "Symptom Duration",
+            "type": "choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "acute",
+                  "display": "Less than 1 week"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "subacute",
+                  "display": "1-4 weeks"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "chronic",
+                  "display": "More than 4 weeks"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "3.3",
+            "text": "Pain Level (1-10)",
+            "type": "integer",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Questionnaire",
+    "id": "11dafbef-80f3-4bf8-9d5f-f4b1c51ea6f2",
+    "status": "active",
+    "title": "Discharge Planning Form",
+    "description": "Post-treatment discharge planning and follow-up care questionnaire",
+    "subjectType": [
+      "Patient"
+    ],
+    "item": [
+      {
+        "linkId": "1",
+        "text": "Discharge Information",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "1.1",
+            "text": "Discharge Date",
+            "type": "date",
+            "required": true
+          },
+          {
+            "linkId": "1.2",
+            "text": "Discharge Disposition",
+            "type": "choice",
+            "required": true,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "home",
+                  "display": "Home"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "home-health",
+                  "display": "Home with Home Health"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "skilled-nursing",
+                  "display": "Skilled Nursing Facility"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "rehab",
+                  "display": "Rehabilitation Facility"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "linkId": "2",
+        "text": "Medications at Discharge",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "2.1",
+            "text": "New Medications Prescribed",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "2.2",
+            "text": "Medication Changes",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "2.3",
+            "text": "Patient understands medication instructions",
+            "type": "boolean",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "3",
+        "text": "Follow-up Care",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "3.1",
+            "text": "Follow-up Appointment Scheduled",
+            "type": "boolean",
+            "required": true
+          },
+          {
+            "linkId": "3.2",
+            "text": "Follow-up Date",
+            "type": "date",
+            "enableWhen": [
+              {
+                "question": "3.1",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
+          },
+          {
+            "linkId": "3.3",
+            "text": "Special Instructions",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "3.4",
+            "text": "Activity Restrictions",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "3.5",
+            "text": "Dietary Restrictions",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "linkId": "4",
+        "text": "Patient Education",
+        "type": "group",
+        "item": [
+          {
+            "linkId": "4.1",
+            "text": "Warning Signs to Watch For",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "4.2",
+            "text": "When to Seek Emergency Care",
+            "type": "text",
+            "required": false
+          },
+          {
+            "linkId": "4.3",
+            "text": "Patient received discharge instructions",
+            "type": "boolean",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }
+]

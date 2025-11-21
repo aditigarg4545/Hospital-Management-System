@@ -91,7 +91,8 @@
     "patientInstruction": "Avoid strenuous exercise 24 hours before test",
     "insurance": [
       {
-        "reference": "Coverage/ec7d3924-4aba-4e39-9fcd-0cbae5bd9230"
+        "reference": "Coverage/ec7d3924-4aba-4e39-9fcd-0cbae5bd9230",
+        "display": "Medicaid"
       }
     ]
   },
@@ -126,7 +127,8 @@
     "patientInstruction": "Drink plenty of water before the test",
     "insurance": [
       {
-        "reference": "Coverage/86a2bdb5-0165-4d67-822b-c0b53b85632d"
+        "reference": "Coverage/86a2bdb5-0165-4d67-822b-c0b53b85632d",
+        "display": "BlueCross BlueShield"
       }
     ]
   },
@@ -161,7 +163,8 @@
     "patientInstruction": "Fast for 12 hours before the test",
     "insurance": [
       {
-        "reference": "Coverage/e581f4b1-c11f-496c-bd55-18f23f255d6b"
+        "reference": "Coverage/e581f4b1-c11f-496c-bd55-18f23f255d6b",
+        "display": "BlueCross BlueShield"
       }
     ]
   },
@@ -226,7 +229,8 @@
     "patientInstruction": "Drink plenty of water before the test",
     "insurance": [
       {
-        "reference": "Coverage/7a219d73-0124-421e-84bb-0d6a56c23e2a"
+        "reference": "Coverage/7a219d73-0124-421e-84bb-0d6a56c23e2a",
+        "display": "Kaiser Permanente"
       }
     ]
   },
@@ -291,7 +295,8 @@
     "patientInstruction": "Fast for 12 hours before the test",
     "insurance": [
       {
-        "reference": "Coverage/bc0ffdbc-1eb2-4a3e-8d87-e9944d0d346d"
+        "reference": "Coverage/bc0ffdbc-1eb2-4a3e-8d87-e9944d0d346d",
+        "display": "BlueCross BlueShield"
       }
     ]
   },
@@ -416,7 +421,8 @@
     "patientInstruction": "Fast for 12 hours before the test",
     "insurance": [
       {
-        "reference": "Coverage/7d78ef8f-54c9-4f42-a609-c674462c437c"
+        "reference": "Coverage/7d78ef8f-54c9-4f42-a609-c674462c437c",
+        "display": "Medicaid"
       }
     ]
   },
@@ -509,7 +515,8 @@
     "patientInstruction": "Fast for 12 hours before the test",
     "insurance": [
       {
-        "reference": "Coverage/ca43e916-e90a-4132-ba35-c7411db02a9a"
+        "reference": "Coverage/ca43e916-e90a-4132-ba35-c7411db02a9a",
+        "display": "Cigna"
       }
     ]
   },
@@ -604,7 +611,8 @@
     "patientInstruction": "Bring a list of current medications",
     "insurance": [
       {
-        "reference": "Coverage/deba4910-944a-4bea-a216-5e6b18bb147e"
+        "reference": "Coverage/deba4910-944a-4bea-a216-5e6b18bb147e",
+        "display": "UnitedHealthcare"
       }
     ]
   },
@@ -699,7 +707,8 @@
     "patientInstruction": "Bring a list of current medications",
     "insurance": [
       {
-        "reference": "Coverage/70b3c944-925a-41a1-bf6a-bb83e2a7486f"
+        "reference": "Coverage/70b3c944-925a-41a1-bf6a-bb83e2a7486f",
+        "display": "Cigna"
       }
     ]
   },
@@ -735,7 +744,8 @@
     "patientInstruction": "Fast for 12 hours before the test",
     "insurance": [
       {
-        "reference": "Coverage/add9123d-17fa-4029-b167-b9ea3c63b581"
+        "reference": "Coverage/add9123d-17fa-4029-b167-b9ea3c63b581",
+        "display": "Kaiser Permanente"
       }
     ]
   },
@@ -770,7 +780,8 @@
     "patientInstruction": "Take medication as usual",
     "insurance": [
       {
-        "reference": "Coverage/22059041-e82e-47da-b41c-5c7d36a62efe"
+        "reference": "Coverage/22059041-e82e-47da-b41c-5c7d36a62efe",
+        "display": "Medicare"
       }
     ]
   },
@@ -804,7 +815,8 @@
     },
     "insurance": [
       {
-        "reference": "Coverage/2c5b43ae-2ae2-493b-a64b-899fa60c6377"
+        "reference": "Coverage/2c5b43ae-2ae2-493b-a64b-899fa60c6377",
+        "display": "Aetna"
       }
     ]
   },
@@ -869,7 +881,8 @@
     "patientInstruction": "No special preparation required",
     "insurance": [
       {
-        "reference": "Coverage/a68cf96b-9fbb-438e-97c5-414a37b9a8f1"
+        "reference": "Coverage/a68cf96b-9fbb-438e-97c5-414a37b9a8f1",
+        "display": "Aetna"
       }
     ]
   },
@@ -963,7 +976,8 @@
     },
     "insurance": [
       {
-        "reference": "Coverage/291cf6b3-7238-4c80-af9c-004d97a8a77b"
+        "reference": "Coverage/291cf6b3-7238-4c80-af9c-004d97a8a77b",
+        "display": "BlueCross BlueShield"
       }
     ]
   },
@@ -998,7 +1012,8 @@
     "patientInstruction": "Take medication as usual",
     "insurance": [
       {
-        "reference": "Coverage/44c27d14-9335-4c8e-8751-636f4aa0629a"
+        "reference": "Coverage/44c27d14-9335-4c8e-8751-636f4aa0629a",
+        "display": "Cigna"
       }
     ]
   },
@@ -1033,7 +1048,8 @@
     "patientInstruction": "Fast for 12 hours before the test",
     "insurance": [
       {
-        "reference": "Coverage/e55e9b06-1b82-40ae-9801-c7fcacc3964a"
+        "reference": "Coverage/e55e9b06-1b82-40ae-9801-c7fcacc3964a",
+        "display": "UnitedHealthcare"
       }
     ]
   },
@@ -1096,7 +1112,8 @@
     },
     "insurance": [
       {
-        "reference": "Coverage/bc95dd04-601e-49b4-a735-901da2f833d3"
+        "reference": "Coverage/bc95dd04-601e-49b4-a735-901da2f833d3",
+        "display": "UnitedHealthcare"
       }
     ]
   },
@@ -1220,7 +1237,8 @@
     },
     "insurance": [
       {
-        "reference": "Coverage/85b9dc4f-309d-4773-b006-b49b858c41ae"
+        "reference": "Coverage/85b9dc4f-309d-4773-b006-b49b858c41ae",
+        "display": "Medicare"
       }
     ]
   }

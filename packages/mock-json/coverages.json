@@ -1,0 +1,524 @@
+[
+  {
+    "resourceType": "Coverage",
+    "id": "ec7d3924-4aba-4e39-9fcd-0cbae5bd9230",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "beneficiary": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "payor": [
+      {
+        "display": "Medicaid"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "86a2bdb5-0165-4d67-822b-c0b53b85632d",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "beneficiary": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "payor": [
+      {
+        "display": "BlueCross BlueShield"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "e581f4b1-c11f-496c-bd55-18f23f255d6b",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "beneficiary": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "payor": [
+      {
+        "display": "BlueCross BlueShield"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "7a219d73-0124-421e-84bb-0d6a56c23e2a",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "beneficiary": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "payor": [
+      {
+        "display": "Kaiser Permanente"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "bc0ffdbc-1eb2-4a3e-8d87-e9944d0d346d",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "beneficiary": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "payor": [
+      {
+        "display": "BlueCross BlueShield"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "7d78ef8f-54c9-4f42-a609-c674462c437c",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "beneficiary": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "payor": [
+      {
+        "display": "Medicaid"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "ca43e916-e90a-4132-ba35-c7411db02a9a",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "beneficiary": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "payor": [
+      {
+        "display": "Cigna"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "deba4910-944a-4bea-a216-5e6b18bb147e",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "beneficiary": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "payor": [
+      {
+        "display": "UnitedHealthcare"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "70b3c944-925a-41a1-bf6a-bb83e2a7486f",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "beneficiary": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "payor": [
+      {
+        "display": "Cigna"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "add9123d-17fa-4029-b167-b9ea3c63b581",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "beneficiary": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "payor": [
+      {
+        "display": "Kaiser Permanente"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "22059041-e82e-47da-b41c-5c7d36a62efe",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "beneficiary": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "payor": [
+      {
+        "display": "Medicare"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "2c5b43ae-2ae2-493b-a64b-899fa60c6377",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "beneficiary": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "payor": [
+      {
+        "display": "Aetna"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "a68cf96b-9fbb-438e-97c5-414a37b9a8f1",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "beneficiary": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "payor": [
+      {
+        "display": "Aetna"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "291cf6b3-7238-4c80-af9c-004d97a8a77b",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "beneficiary": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "payor": [
+      {
+        "display": "BlueCross BlueShield"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "44c27d14-9335-4c8e-8751-636f4aa0629a",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "beneficiary": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "payor": [
+      {
+        "display": "Cigna"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "e55e9b06-1b82-40ae-9801-c7fcacc3964a",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "beneficiary": {
+      "reference": "Patient/46dbf94f-7330-4d9a-8725-b873462c05b8"
+    },
+    "payor": [
+      {
+        "display": "UnitedHealthcare"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "bc95dd04-601e-49b4-a735-901da2f833d3",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/c745d29d-17dc-409d-a352-7e890b0187da"
+    },
+    "beneficiary": {
+      "reference": "Patient/c745d29d-17dc-409d-a352-7e890b0187da"
+    },
+    "payor": [
+      {
+        "display": "UnitedHealthcare"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  },
+  {
+    "resourceType": "Coverage",
+    "id": "85b9dc4f-309d-4773-b006-b49b858c41ae",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EHCPOL",
+          "display": "Extended Healthcare"
+        }
+      ]
+    },
+    "subscriber": {
+      "reference": "Patient/ff74e351-4f2b-404c-8a7f-30e6c89101ac"
+    },
+    "beneficiary": {
+      "reference": "Patient/ff74e351-4f2b-404c-8a7f-30e6c89101ac"
+    },
+    "payor": [
+      {
+        "display": "Medicare"
+      }
+    ],
+    "period": {
+      "start": "2024-11-21",
+      "end": "2026-11-21"
+    }
+  }
+]

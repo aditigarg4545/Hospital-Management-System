@@ -1,0 +1,650 @@
+[
+  {
+    "resourceType": "Observation",
+    "id": "e7427eb9-5c57-4101-b01c-371770cf1654",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "5900-6",
+          "display": "INR in Platelet poor plasma by Coagulation assay"
+        }
+      ],
+      "text": "INR Report"
+    },
+    "subject": {
+      "reference": "Patient/da688148-214b-40db-8cfc-46e67ef45e22"
+    },
+    "effectiveDateTime": "2025-10-28T15:36:47.251Z",
+    "valueQuantity": {
+      "value": "44.47",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "L",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "9f13074c-a31d-4672-ac94-6193f57c4178",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24323-8",
+          "display": "Comprehensive Metabolic Panel"
+        }
+      ],
+      "text": "CMP Report"
+    },
+    "subject": {
+      "reference": "Patient/da688148-214b-40db-8cfc-46e67ef45e22"
+    },
+    "effectiveDateTime": "2025-11-02T22:29:55.432Z",
+    "valueQuantity": {
+      "value": "61.06",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "6e6c9f3a-9ab4-486d-91fc-360d45bd84ab",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6599-5",
+          "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin T Report"
+    },
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "effectiveDateTime": "2024-12-27T20:44:39.764Z",
+    "valueQuantity": {
+      "value": "67.58",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "47e1dc89-c7cb-419d-bf22-a30b419d347f",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin I Report"
+    },
+    "subject": {
+      "reference": "Patient/fe9426d6-cba2-4991-be4e-7777d7686cae"
+    },
+    "effectiveDateTime": "2025-02-06T23:39:10.056Z",
+    "valueQuantity": {
+      "value": "40.13",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "c544477a-42c2-47ab-bb58-39e379c5d39b",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Triglycerides Report"
+    },
+    "subject": {
+      "reference": "Patient/db2f1334-adba-4628-9a06-f8966bbe90be"
+    },
+    "effectiveDateTime": "2025-05-14T19:31:25.653Z",
+    "valueQuantity": {
+      "value": "109.08",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "4c6b7a4c-78ef-4b43-88b4-35f67795de5c",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "33747-0",
+          "display": "BNP [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "BNP Report"
+    },
+    "subject": {
+      "reference": "Patient/3bcede0a-2c73-4479-92d5-c86595be3f0a"
+    },
+    "effectiveDateTime": "2025-11-17T09:11:21.395Z",
+    "valueQuantity": {
+      "value": "24.42",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "98196cb0-8861-460a-9f40-5bc277df6111",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "6598-7",
+          "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Troponin I Report"
+    },
+    "subject": {
+      "reference": "Patient/1731eef6-ca03-4530-9d2e-1005770610cb"
+    },
+    "effectiveDateTime": "2025-08-27T22:50:07.375Z",
+    "valueQuantity": {
+      "value": "46.85",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "18b756a8-ac54-457c-a80d-a407d715039e",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24357-6",
+          "display": "Lipid Panel"
+        }
+      ],
+      "text": "Lipid Panel Report"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "effectiveDateTime": "2025-09-29T13:03:19.643Z",
+    "valueQuantity": {
+      "value": "32.90",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "L",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "7a535078-f0be-45ad-b3de-db8463893a0c",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24357-6",
+          "display": "Lipid Panel"
+        }
+      ],
+      "text": "Lipid Panel Report"
+    },
+    "subject": {
+      "reference": "Patient/151b37bc-3609-4f71-9b94-95e27c7a07b0"
+    },
+    "effectiveDateTime": "2025-03-31T07:01:35.068Z",
+    "valueQuantity": {
+      "value": "38.35",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "N",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "c959f228-4aef-40c2-95d4-5d3eafa51b10",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Blood Glucose Report"
+    },
+    "subject": {
+      "reference": "Patient/2fa94939-07f9-4613-b6d6-085a5ff4b918"
+    },
+    "effectiveDateTime": "2025-11-12T03:01:18.658Z",
+    "valueQuantity": {
+      "value": "21.57",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "1b4ec737-6bea-4ab1-85e9-0921971dbfe9",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2324-2",
+          "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "ALT Report"
+    },
+    "subject": {
+      "reference": "Patient/e322546a-531a-4f3e-a716-9d65accee206"
+    },
+    "effectiveDateTime": "2025-08-10T11:32:34.593Z",
+    "valueQuantity": {
+      "value": "95.05",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "8098bad9-6e7b-476b-bc86-49256ae8f787",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Total Cholesterol Report"
+    },
+    "subject": {
+      "reference": "Patient/4e806260-f855-4642-bc98-5cbc6c54aa51"
+    },
+    "effectiveDateTime": "2025-08-24T15:38:57.235Z",
+    "valueQuantity": {
+      "value": "69.86",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "06df557a-ce90-4338-858f-9ec04bd1eb49",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "49765-1",
+          "display": "Calcium [Mass/volume] in Blood"
+        }
+      ],
+      "text": "Calcium Report"
+    },
+    "subject": {
+      "reference": "Patient/66ffe14a-022d-4d9b-a371-fbd000eb1b78"
+    },
+    "effectiveDateTime": "2025-07-08T12:19:04.631Z",
+    "valueQuantity": {
+      "value": "100.39",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "High"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "e043fa61-02be-4f96-94d4-e278312d84fe",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "HDL Cholesterol Report"
+    },
+    "subject": {
+      "reference": "Patient/2edab4be-ce45-44cf-970b-1fa9cece4378"
+    },
+    "effectiveDateTime": "2025-05-21T06:41:28.356Z",
+    "valueQuantity": {
+      "value": "100.70",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "14b68b9d-b2dc-4a47-8831-19b8f8a8c9a3",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "2823-3",
+          "display": "Potassium [Moles/volume] in Serum or Plasma"
+        }
+      ],
+      "text": "Potassium Report"
+    },
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "effectiveDateTime": "2024-11-23T14:52:48.693Z",
+    "valueQuantity": {
+      "value": "42.90",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "Low"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "3834dd5b-6ff2-4600-b521-416a0e321f97",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24323-8",
+          "display": "Comprehensive Metabolic Panel"
+        }
+      ],
+      "text": "CMP Report"
+    },
+    "subject": {
+      "reference": "Patient/c7eb708d-df3a-4522-b943-7abd9f1246f2"
+    },
+    "effectiveDateTime": "2025-07-08T00:47:34.743Z",
+    "valueQuantity": {
+      "value": "104.20",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "Abnormal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "6756da17-58a7-42da-99de-93a674fa99cc",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26449-9",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        }
+      ],
+      "text": "HbA1c Report"
+    },
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "effectiveDateTime": "2025-04-16T05:50:36.830Z",
+    "valueQuantity": {
+      "value": "15.89",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resourceType": "Observation",
+    "id": "9a820d59-f0b8-444a-af9d-69ca57f46c24",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24356-8",
+          "display": "Complete Blood Count"
+        }
+      ],
+      "text": "CBC Report"
+    },
+    "subject": {
+      "reference": "Patient/0d586af3-fbcd-4714-a25b-943f2ee4979d"
+    },
+    "effectiveDateTime": "2024-12-17T01:24:26.326Z",
+    "valueQuantity": {
+      "value": "77.58",
+      "unit": "mg/dL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg/dL"
+    },
+    "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "A",
+            "display": "Normal"
+          }
+        ]
+      }
+    ]
+  }
+]

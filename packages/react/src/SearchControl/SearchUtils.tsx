@@ -3,6 +3,7 @@
 import type { Filter, InternalSchemaElement, SearchRequest } from '@medplum/core';
 import { capitalize, DEFAULT_SEARCH_COUNT, evalFhirPathTyped, formatDateTime, Operator } from '@medplum/core';
 import type { Resource, SearchParameter } from '@medplum/fhirtypes';
+import { Text } from '@mantine/core';
 import type { JSX } from 'react';
 import { MedplumLink } from '../MedplumLink/MedplumLink';
 import { ResourcePropertyDisplay } from '../ResourcePropertyDisplay/ResourcePropertyDisplay';
@@ -541,7 +542,7 @@ export function renderValue(resource: Resource, field: SearchControlField): stri
   }
 
   // We don't know how to render this field definition
-  return null;
+  return <Text c="dimmed">-</Text>;
 }
 
 /**
@@ -554,10 +555,10 @@ function renderPropertyValue(resource: Resource, elementDefinition: InternalSche
   const path = elementDefinition.path?.split('.')?.pop()?.replaceAll('[x]', '') ?? '';
   const [value, propertyType] = getValueAndType({ type: resource.resourceType, value: resource }, path);
   if (!value) {
-    return null;
+    return <Text c="dimmed">-</Text>;
   }
 
-  return (
+  const display = (
     <ResourcePropertyDisplay
       path={elementDefinition.path}
       property={elementDefinition}
@@ -568,6 +569,9 @@ function renderPropertyValue(resource: Resource, elementDefinition: InternalSche
       link={false}
     />
   );
+
+  // If ResourcePropertyDisplay returns null, show placeholder
+  return display || <Text c="dimmed">-</Text>;
 }
 
 /**
@@ -579,21 +583,21 @@ function renderPropertyValue(resource: Resource, elementDefinition: InternalSche
 function renderSearchParameterValue(resource: Resource, searchParam: SearchParameter): JSX.Element | null {
   const value = evalFhirPathTyped(searchParam.expression as string, [{ type: resource.resourceType, value: resource }]);
   if (!value || value.length === 0) {
-    return null;
+    return <Text c="dimmed">-</Text>;
   }
 
-  return (
-    <>
-      {value.map((v, index) => (
-        <ResourcePropertyDisplay
-          key={`${index}-${value.length}`}
-          propertyType={v.type}
-          value={v.value}
-          maxWidth={200}
-          ignoreMissingValues={true}
-          link={false}
-        />
-      ))}
-    </>
-  );
+  const displays = value.map((v, index) => (
+    <ResourcePropertyDisplay
+      key={`${index}-${value.length}`}
+      propertyType={v.type}
+      value={v.value}
+      maxWidth={200}
+      ignoreMissingValues={true}
+      link={false}
+    />
+  ));
+
+  // If all displays are null/empty, show placeholder
+  const hasContent = displays.some(display => display !== null);
+  return hasContent ? <>{displays}</> : <Text c="dimmed">-</Text>;
 }
