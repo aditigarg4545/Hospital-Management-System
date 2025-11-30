@@ -84,7 +84,7 @@ export function OAuthPage(): JSX.Element | null {
           ) : (
             <img src={AppLogo} alt="Logo" style={{ height: 32, width: '32' }} />
           )}
-          <Title>{clientInfo?.welcomeString ?? 'Sign in to Medplum'}</Title>
+          <Title>{clientInfo?.welcomeString ?? 'Sign in to Medivyx'}</Title>
         </>
       )}
     </SignInForm>

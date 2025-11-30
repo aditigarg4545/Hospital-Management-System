@@ -110,7 +110,7 @@ function isNavOpen(): boolean {
 
 async function openNav(user: UserEvent): Promise<void> {
   if (!isNavOpen()) {
-    await user.click(screen.getByTitle('Medplum Logo'));
+    await user.click(screen.getByTitle('Medivyx Logo'));
   }
 }
 
