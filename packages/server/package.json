@@ -20,6 +20,7 @@
     "dev": "ts-node-dev --poll --respawn --transpile-only --require ./src/otel/instrumentation.ts src/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "init:db": "ts-node --transpileOnly src/init-db.ts",
     "migrate": "ts-node --transpileOnly src/migrations/migrate.ts",
     "seed:mock-data": "ts-node --transpileOnly src/seed-mock-data.ts",
     "start": "node --require ./dist/otel/instrumentation.js dist/index.js",

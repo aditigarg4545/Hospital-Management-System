@@ -19,6 +19,7 @@ export function Form(props: FormProps): JSX.Element {
       <form
         style={props.style}
         data-testid={props.testid}
+        autoComplete="off"
         onSubmit={(e: SyntheticEvent) => {
           e.preventDefault();
           const formData = parseForm(e.target as HTMLFormElement);

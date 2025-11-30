@@ -37,8 +37,32 @@ export function NewUserForm(props: NewUserFormProps): JSX.Element {
     }
   }, [recaptchaSiteKey]);
 
+  // Clear any autofilled values after component mounts
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const form = document.querySelector('form[data-testid="new-user-registration-form"]') as HTMLFormElement;
+      if (form) {
+        const emailInput = form.querySelector('input[name="email"]') as HTMLInputElement;
+        const passwordInput = form.querySelector('input[name="password"]') as HTMLInputElement;
+        if (emailInput?.value) {
+          emailInput.value = '';
+          // Trigger input event to notify React
+          emailInput.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+        if (passwordInput?.value) {
+          passwordInput.value = '';
+          // Trigger input event to notify React
+          passwordInput.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Form
+      key="new-user-form"
+      testid="new-user-registration-form"
       onSubmit={async (formData: Record<string, string>) => {
         setOutcome(undefined);
         try {
@@ -114,12 +138,17 @@ export function NewUserForm(props: NewUserFormProps): JSX.Element {
           label="Email"
           placeholder="name@domain.com"
           required={true}
+          autoComplete="off"
+          data-1p-ignore
+          data-lpignore="true"
           error={getErrorsForInput(outcome, 'email')}
         />
         <PasswordInput
           name="password"
           label="Password"
-          autoComplete="off"
+          autoComplete="new-password"
+          data-1p-ignore
+          data-lpignore="true"
           required={true}
           error={getErrorsForInput(outcome, 'password')}
         />

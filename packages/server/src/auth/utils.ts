@@ -240,6 +240,12 @@ export function validateRecaptcha(projectValidation?: (p: Project) => OperationO
     const config = getConfig();
     let secretKey: string | undefined = config.recaptchaSecretKey;
 
+    // If backend config has no recaptcha keys configured, skip validation (for development)
+    if (!config.recaptchaSiteKey && !config.recaptchaSecretKey) {
+      next();
+      return;
+    }
+
     if (recaptchaSiteKey && recaptchaSiteKey !== config.recaptchaSiteKey) {
       // If the recaptcha site key is not the main Medplum recaptcha site key,
       // then it must be associated with a Project.
@@ -249,7 +255,9 @@ export function validateRecaptcha(projectValidation?: (p: Project) => OperationO
         sendOutcome(res, badRequest('Invalid recaptchaSiteKey'));
         return;
       }
-      secretKey = project.site?.find((s) => s.recaptchaSiteKey === recaptchaSiteKey)?.recaptchaSecretKey;
+      secretKey = project.site?.find(
+        (s: NonNullable<Project['site']>[number]) => s.recaptchaSiteKey === recaptchaSiteKey
+      )?.recaptchaSecretKey;
       if (!secretKey) {
         sendOutcome(res, badRequest('Invalid recaptchaSecretKey'));
         return;
