@@ -5,7 +5,8 @@ import type { JSX } from 'react';
 import { useState } from 'react';
 import { Outlet, useNavigate, useParams } from 'react-router';
 
-const tabs = ['Form', 'JSON', 'Profiles'] as const;
+const tabs = ['Form'] as const;
+// const tabs = ['Form', 'JSON', 'Profiles'] as const;
 const BETA_TABS: (typeof tabs)[number][] = ['Profiles'];
 const defaultTab = tabs[0].toLowerCase();
 

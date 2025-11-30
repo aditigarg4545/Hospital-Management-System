@@ -27,7 +27,8 @@ function getTabs(resourceType: string): string[] {
   }
 
   if (resourceType === 'Questionnaire') {
-    result.push('Preview', 'Builder', 'Bots', 'Responses');
+    // result.push('Preview', 'Builder', 'Bots', 'Responses');
+    result.push('Preview', 'Builder', 'Responses');
   }
 
   if (resourceType === 'DiagnosticReport' || resourceType === 'MeasureReport') {
@@ -42,11 +43,13 @@ function getTabs(resourceType: string): string[] {
     result.push('Ranges');
   }
 
-  if (resourceType === 'Agent') {
-    result.push('Tools');
-  }
+  // if (resourceType === 'Agent') {
+  //   result.push('Tools');
+  // }
 
-  result.push('Details', 'Edit', 'Event', 'History', 'Blame', 'JSON', 'Apps', 'Profiles');
+  // result.push('Details', 'Edit', 'Event', 'History', 'Blame', 'JSON', 'Apps', 'Profiles');
+
+  result.push('Details', 'Edit');
 
   if (resourceType === 'Patient') {
     result.push('Export');
