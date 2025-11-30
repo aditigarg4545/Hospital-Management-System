@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { Group, List, Stack, Text, Title } from '@mantine/core';
+import { Anchor, Group, List, Stack, Text, Title } from '@mantine/core';
 import { formatCodeableConcept, formatDateTime, formatObservationValue, isReference } from '@medplum/core';
 import type {
   Annotation,
@@ -11,12 +11,11 @@ import type {
   Reference,
   Specimen,
 } from '@medplum/fhirtypes';
-import { useMedplum, useResource } from '@medplum/react-hooks';
+import { useCachedBinaryUrl, useMedplum, useResource } from '@medplum/react-hooks';
 import cx from 'clsx';
 import type { JSX } from 'react';
 import { useEffect, useState } from 'react';
 import { CodeableConceptDisplay } from '../CodeableConceptDisplay/CodeableConceptDisplay';
-import { MedplumLink } from '../MedplumLink/MedplumLink';
 import { NoteDisplay } from '../NoteDisplay/NoteDisplay';
 import { RangeDisplay } from '../RangeDisplay/RangeDisplay';
 import { ReferenceDisplay } from '../ReferenceDisplay/ReferenceDisplay';
@@ -60,6 +59,7 @@ export function DiagnosticReportDisplay(props: DiagnosticReportDisplayProps): JS
   }
 
   const specimenNotes: Annotation[] = specimens?.flatMap((spec) => spec.note || []) || [];
+  const pdfAttachment = diagnosticReport.presentedForm?.find((pf) => pf.contentType === 'application/pdf');
 
   if (diagnosticReport.presentedForm && diagnosticReport.presentedForm.length > 0) {
     const pf = diagnosticReport.presentedForm[0];
@@ -76,6 +76,7 @@ export function DiagnosticReportDisplay(props: DiagnosticReportDisplayProps): JS
       {diagnosticReport.result && (
         <ObservationTable hideObservationNotes={props.hideObservationNotes} value={diagnosticReport.result} />
       )}
+      {pdfAttachment && <PdfReportLink attachment={pdfAttachment} />}
       {specimenNotes.length > 0 && <NoteDisplay value={specimenNotes} />}
     </Stack>
   );
@@ -231,9 +232,9 @@ function ObservationRow(props: ObservationRowProps): JSX.Element | null {
     <>
       <tr className={cx({ [classes.criticalRow]: critical })}>
         <td rowSpan={displayNotes ? 2 : 1}>
-          <MedplumLink to={observation}>
-            <CodeableConceptDisplay value={observation.code} />
-          </MedplumLink>
+          {/* <MedplumLink to={observation}> */}
+          <CodeableConceptDisplay value={observation.code} />
+          {/* </MedplumLink> */}
         </td>
         <td>
           <ObservationValueDisplay value={observation} />
@@ -317,4 +318,31 @@ function ReferenceRangeDisplay(props: ReferenceRangeProps): JSX.Element | null {
 function isCritical(observation: Observation): boolean {
   const code = observation.interpretation?.[0]?.coding?.[0]?.code;
   return code === 'AA' || code === 'LL' || code === 'HH' || code === 'A';
+}
+
+interface PdfReportLinkProps {
+  readonly attachment: { contentType?: string; url?: string; title?: string };
+}
+
+function PdfReportLink(props: PdfReportLinkProps): JSX.Element {
+  const { url: uncachedUrl, title } = props.attachment;
+  const url = useCachedBinaryUrl(uncachedUrl);
+
+  if (!url) {
+    return <></>;
+  }
+
+  return (
+    <Stack gap="xs" mt="md">
+      <Title order={2} size="h6">
+        Report Document
+      </Title>
+      <Anchor href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: '16px', fontWeight: 500 }}>
+        📄 {title || 'View Report PDF'}
+      </Anchor>
+      <Text size="sm" c="dimmed">
+        Click to open the report in a new tab
+      </Text>
+    </Stack>
+  );
 }
