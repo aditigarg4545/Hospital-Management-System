@@ -153,7 +153,7 @@ export function NewUserForm(props: NewUserFormProps): JSX.Element {
           error={getErrorsForInput(outcome, 'password')}
         />
         <Text c="dimmed" size="xs">
-          By clicking submit you agree to the Medplum{' '}
+          By clicking submit you agree to the Medivyx{' '}
           <Anchor href="https://www.medplum.com/privacy">Privacy&nbsp;Policy</Anchor>
           {' and '}
           <Anchor href="https://www.medplum.com/terms">Terms&nbsp;of&nbsp;Service</Anchor>.

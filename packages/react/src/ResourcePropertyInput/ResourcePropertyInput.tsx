@@ -1,6 +1,6 @@
 // SPDX-FileCopyrightText: Copyright Orangebot, Inc. and Medplum contributors
 // SPDX-License-Identifier: Apache-2.0
-import { Checkbox, Group, NativeSelect, Textarea, TextInput } from '@mantine/core';
+import { Autocomplete, Checkbox, Group, NativeSelect, Textarea, TextInput } from '@mantine/core';
 import type { ExtendedInternalSchemaElement } from '@medplum/core';
 import {
   applyDefaultValuesToElement,
@@ -12,7 +12,7 @@ import {
   isPopulated,
   PropertyType,
 } from '@medplum/core';
-import type { ElementDefinitionBinding, ElementDefinitionType } from '@medplum/fhirtypes';
+import type { ElementDefinitionBinding, ElementDefinitionType, Organization, Reference } from '@medplum/fhirtypes';
 import type { JSX } from 'react';
 import { useContext, useMemo, useState } from 'react';
 import { AddressInput } from '../AddressInput/AddressInput';
@@ -23,6 +23,7 @@ import { BackboneElementInput } from '../BackboneElementInput/BackboneElementInp
 import { CodeableConceptInput } from '../CodeableConceptInput/CodeableConceptInput';
 import { CodeInput } from '../CodeInput/CodeInput';
 import { CodingInput } from '../CodingInput/CodingInput';
+import { INDIAN_MEDICAL_INSTITUTIONS } from '../constants/medical-institutions';
 import { ContactDetailInput } from '../ContactDetailInput/ContactDetailInput';
 import { ContactPointInput } from '../ContactPointInput/ContactPointInput';
 import { DateTimeInput } from '../DateTimeInput/DateTimeInput';
@@ -180,6 +181,23 @@ export function ElementDefinitionTypeInput(props: ElementDefinitionTypeInputProp
   const required = props.min !== undefined && props.min > 0;
 
   const propertyType = props.elementDefinitionType.code;
+
+  // Pre-compute medical institution options for qualification.issuer field
+  const isQualificationIssuer = path?.includes('qualification') && path?.includes('issuer');
+  const institutionOptions = useMemo(
+    () =>
+      isQualificationIssuer
+        ? INDIAN_MEDICAL_INSTITUTIONS.map((institution) => ({
+            value: institution,
+            label: institution,
+          }))
+        : [],
+    [isQualificationIssuer]
+  );
+  const selectedInstitution = useMemo(
+    () => (isQualificationIssuer ? ((props.defaultValue as Reference<Organization> | undefined)?.display ?? '') : ''),
+    [isQualificationIssuer, props.defaultValue]
+  );
 
   const elementsContext = useContext(ElementsContext);
   const defaultValue = useMemo(() => {
@@ -367,8 +385,45 @@ export function ElementDefinitionTypeInput(props: ElementDefinitionTypeInputProp
       return <RangeInput {...getComplexInputProps()} />;
     case PropertyType.Ratio:
       return <RatioInput {...getComplexInputProps()} />;
-    case PropertyType.Reference:
+    case PropertyType.Reference: {
+      // Special handling for Practitioner.qualification.issuer field
+      if (isQualificationIssuer) {
+        const errorPath = valuePath ?? path;
+        return (
+          <>
+            {name && (
+              <input
+                type="hidden"
+                name={name}
+                value={
+                  selectedInstitution ? JSON.stringify({ display: selectedInstitution } as Reference<Organization>) : ''
+                }
+              />
+            )}
+            <Autocomplete
+              data={institutionOptions}
+              defaultValue={selectedInstitution}
+              onChange={(value) => {
+                if (onChange) {
+                  if (value) {
+                    onChange({ display: value } as Reference<Organization>);
+                  } else {
+                    onChange(undefined);
+                  }
+                }
+              }}
+              placeholder="Select medical institution"
+              required={props.min !== undefined && props.min > 0}
+              error={getErrorsForInput(outcome, errorPath)}
+              disabled={readOnly}
+              limit={50}
+              maxDropdownHeight={300}
+            />
+          </>
+        );
+      }
       return <ReferenceInput {...getComplexInputProps()} targetTypes={getTargetTypes(props.elementDefinitionType)} />;
+    }
     case PropertyType.Timing:
       return <TimingInput {...getComplexInputProps()} />;
     case PropertyType.Dosage:
